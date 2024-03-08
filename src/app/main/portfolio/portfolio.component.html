@@ -1,1 +1,10 @@
-<p>portfolio works!</p>
+<main>
+    <h2>Portfolio</h2>
+    <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+    <div>
+        @for (project of portfoliodata.projectlist; track $index) {
+            <app-project [index]="$index" [project]="project"></app-project>
+        }
+
+    </div>
+</main>

@@ -1,1 +1,6 @@
-<p>project works!</p>
+<main [ngStyle]="{'flex-direction': index % 2 == 0 ? 'row' : 'row-reverse'}">
+    <img src="../../../../assets/img/projects/{{ project.path }}.png" alt="{{ project.name }}">
+    <div [ngStyle]="{'align-items': index % 2 == 0 ? 'flex-end' : 'flex-start'}">
+        <span>{{ project.number }}/05</span>
+    </div>
+</main>
