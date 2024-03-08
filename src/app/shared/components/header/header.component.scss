@@ -8,11 +8,13 @@ main {
     align-items: center;
     background-color: $cream;
     font-family: 'Syne';
+
     >img:first-child {
         width: 4.16669rem;
         height: 1.875rem;
         flex-shrink: 0;
     }
+
     >img:last-child {
         height: 2rem;
         width: 2.5rem;

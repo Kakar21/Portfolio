@@ -1,1 +1,9 @@
-<p>my-skills works!</p>
+<main>
+    <h2>My skills</h2>
+    <div>
+        <div class="skill" *ngFor="let skill of skills">
+            <img src="../../../assets/img/icons/{{ skill.path }}.svg" alt="{{ skill.name }}">
+            <h6>{{ skill.name }}</h6>
+        </div>
+    </div>
+</main>

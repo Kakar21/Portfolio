@@ -1,0 +1,55 @@
+@import "../../../styles.scss";
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 6.31rem 0 6.25rem;
+
+    >div {
+        display: inline-flex;
+        padding: calc(10.0625rem - 4px) calc(5.375rem - 4px) calc(8.34rem - 4px) calc(8.8125rem - 4px);
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 4px solid $black;
+        column-gap: 7rem;
+        row-gap: 4.41rem;
+    }
+}
+
+h2 {
+    width: 33.8125rem;
+    height: 4.875rem;
+    padding: 0.625rem;
+    margin-bottom: -2.745rem;
+    text-align: center;
+    font-family: Syne;
+    font-size: 4.875rem;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0.04875rem;
+    background: $cream;
+    z-index: 1;
+}
+
+
+.skill {
+    display: flex;
+    width: 6.25rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+
+    >img {
+        height: 4.6875rem;
+    }
+
+    >h6 {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 120%;
+    }
+}
