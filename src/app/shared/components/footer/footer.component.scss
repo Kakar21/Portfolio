@@ -1,0 +1,67 @@
+@import "../../../../styles.scss";
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 77.5rem;
+    flex-shrink: 0;
+    background-color: $black;
+    padding: calc(4.09rem - 17.5px) 6.25rem calc(4.09rem - 17.5px) 6.25rem;
+    color: $white;
+    gap: 0.06rem;
+
+    >div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 4.3125rem;
+        width: 100%;
+
+        >div:not(.socials) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+
+            >img {
+                width: 4.16669rem;
+                height: 1.875rem;
+                flex-shrink: 0;
+            }
+
+            >span {
+                font-family: Poppins;
+                font-size: 1.4375rem;
+                line-height: 120%;
+            }
+        }
+    }
+
+    >a {
+        padding: 0.3125rem 0.25rem 0.5rem 0.625rem;
+        line-height: 120%;
+    }
+}
+
+.socials {
+    display: inline-flex;
+    height: 2.5rem;
+    align-items: center;
+    gap: 2.625rem;
+    flex-shrink: 0;
+
+    >a {
+        display: flex;
+        width: 2.5rem;
+        height: 2.5rem;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        >img {
+            width: 1.875rem;
+            flex-shrink: 0;
+        }
+    }
+}
