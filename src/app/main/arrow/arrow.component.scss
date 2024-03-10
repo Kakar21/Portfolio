@@ -1,0 +1,14 @@
+@import "../../../styles.scss";
+
+main {
+    display: flex;
+    width: 77.4375rem;
+    height: 18.75rem;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-shrink: 0;
+    >img {
+        height: 14.70rem;
+        width: 14.70rem;
+    }
+}

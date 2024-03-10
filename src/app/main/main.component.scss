@@ -1,0 +1,23 @@
+#first-arrow {
+    margin-left: -6.1875rem !important;
+}
+
+#second-arrow {
+    transform: scaleX(-1);
+    margin-bottom: 0 !important;
+    margin-left: 9.875rem !important;
+}
+
+#third-arrow {
+    margin-left: 6.75rem !important;
+    margin-bottom: -9.375rem !important;
+}
+
+#first-arrow,
+#second-arrow,
+#third-arrow {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: -4.6875rem 0;
+}

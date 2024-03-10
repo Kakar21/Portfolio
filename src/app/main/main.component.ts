@@ -4,6 +4,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { ArrowComponent } from './arrow/arrow.component';
 
 @Component({
   selector: 'app-main',
@@ -13,7 +14,8 @@ import { ContactComponent } from './contact/contact.component';
     AboutMeComponent,
     MySkillsComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    ArrowComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
