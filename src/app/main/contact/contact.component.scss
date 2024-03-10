@@ -7,11 +7,10 @@ main {
     background-size: cover;
     background-position: top;
     color: $white;
-    padding: 0 6.5rem;
-    // Change when arrow added
+    padding: 0 6.5rem 0.25rem 6.5rem;
     gap: 3.625rem;
 
-    >div {
+    >div:not(.scroll-up) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,8 +31,8 @@ main {
 
 h2 {
     font-family: Syne;
-    padding: 9.40625rem 50.375rem 0 0;
-    // Change when arrow added
+    padding-top: 9.40625rem;
+    align-self: flex-start;
     font-size: 4.875rem;
     font-weight: 800;
     line-height: 100%;
@@ -47,6 +46,7 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
+
     >input,
     textarea {
         width: 35.4375rem;
@@ -54,6 +54,8 @@ form {
         background-color: $black;
         border-bottom: 2px solid $cream;
         color: $white;
+        resize: none;
+
         &::placeholder {
             color: $cream;
             font-family: Overpass;
@@ -61,7 +63,6 @@ form {
             font-style: normal;
             font-weight: 400;
             line-height: 120%;
-            /* 1.2rem */
         }
     }
 
@@ -70,19 +71,17 @@ form {
         margin-top: -0.5rem;
         font-size: 1.4375rem;
         line-height: 120%;
-        /* 1.725rem */
         padding: calc(1.25rem - 4px) calc(3.75rem - 4px);
         gap: 0.625rem;
         border: 4px solid #BBB;
         opacity: 0.3;
-
-        /* s2 shadow */
         box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
     }
 
     >div {
         display: flex;
         margin-top: -0.25rem;
+
         >label {
             display: flex;
             align-items: center;
@@ -91,6 +90,7 @@ form {
             font-size: 0.875rem;
             line-height: 120%;
             padding-left: 1.75rem;
+
             >a {
                 color: $orange;
                 padding: 0.3125rem 0.4375rem;
@@ -121,5 +121,23 @@ form {
 
     &:checked:hover {
         background-image: url(../../../assets/img/symbols/checked-hover.svg);
+    }
+}
+
+.scroll-up {
+    margin-top: -7rem;
+    align-self: flex-end;
+    display: flex;
+    width: 3.36575rem;
+    height: 4.75275rem;
+    justify-content: center;
+    align-items: flex-end;
+    flex-shrink: 0;
+    margin-right: -0.615625rem;
+
+    >img {
+        width: 2.24075rem;
+        height: 3.25275rem;
+        flex-shrink: 0;
     }
 }
