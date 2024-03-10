@@ -47,14 +47,13 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
-
     >input,
     textarea {
         width: 35.4375rem;
         padding: 0.9375rem 1.5625rem;
         background-color: $black;
         border-bottom: 2px solid $cream;
-
+        color: $white;
         &::placeholder {
             color: $cream;
             font-family: Overpass;
@@ -84,12 +83,14 @@ form {
     >div {
         display: flex;
         margin-top: -0.25rem;
-
         >label {
             display: flex;
             align-items: center;
+            position: relative;
+            box-sizing: border-box;
             font-size: 0.875rem;
             line-height: 120%;
+            padding-left: 1.75rem;
             >a {
                 color: $orange;
                 padding: 0.3125rem 0.4375rem;
@@ -98,4 +99,27 @@ form {
         }
     }
 
+}
+
+#privacy-policy {
+    appearance: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    position: absolute;
+    background-image: url(../../../assets/img/symbols/unchecked.svg);
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 0;
+
+    &:hover {
+        background-image: url(../../../assets/img/symbols/unchecked-hover.svg);
+    }
+
+    &:checked {
+        background-image: url(../../../assets/img/symbols/checked.svg);
+    }
+
+    &:checked:hover {
+        background-image: url(../../../assets/img/symbols/checked-hover.svg);
+    }
 }
