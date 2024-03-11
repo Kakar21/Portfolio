@@ -22,6 +22,18 @@ body {
 
 button {
     background-color: transparent;
+    transition: 100ms ease-in-out;
+
+    &:hover {
+        font-weight: 700 !important;
+        padding: calc(1.25rem - 4px) calc(5rem - 4px) !important;
+    }
+
+    &:active {
+        color: $cream !important;
+        font-weight: 400 !important;
+        background: $black !important;
+    }
 }
 
 a {
@@ -29,6 +41,15 @@ a {
     color: $white;
 }
 
-input, textarea {
+h2 {
+    transition: 100ms ease-in-out;
+
+    &:hover {
+        color: $orange;
+    }
+}
+
+input,
+textarea {
     border: 0;
 }

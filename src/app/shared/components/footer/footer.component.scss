@@ -61,8 +61,16 @@ main {
         align-items: center;
 
         >img {
+            transition: 100ms ease-out;
             width: 1.875rem;
             flex-shrink: 0;
+        }
+
+        &:hover {
+            >img {
+                transform: translateY(-0.8125rem);
+            }
+
         }
     }
 }

@@ -14,7 +14,7 @@ main {
         display: flex;
         gap: 5.72rem;
 
-        >div {
+        >div:not(.portrait) {
             margin-top: 0.5rem;
             display: flex;
             flex-direction: column;
@@ -49,4 +49,26 @@ img {
     height: 33.3125rem;
     object-fit: cover;
     padding: 0 1.25rem 1.25rem 0;
+}
+
+.portrait {
+    width: 34.5625rem;
+    height: 34.5625rem;
+    position: relative;
+
+    >div {
+        position: absolute;
+        width: 33.3125rem;
+        height: 33.3125rem;
+        transition: all 100ms ease-in;
+        border: 4px solid $black;
+        opacity: 0;
+    }
+
+    &:hover {
+        >div {
+            margin: 1.25rem 0 0 1.25rem;
+            opacity: 1;
+        }
+    }
 }
