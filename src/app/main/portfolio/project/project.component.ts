@@ -10,9 +10,13 @@ import { Component, Input } from '@angular/core';
 })
 export class ProjectComponent {
   @Input() project = {
-    name: 'Sharkie',
-    path: 'sharkie',
-    number: '01'
+    name: '',
+    path: '',
+    number: '',
+    tools: '',
+    description: '',
+    link: '',
+    github: ''
   }; 
 
   @Input() index = 0;
