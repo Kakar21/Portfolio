@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./fonts.scss";
 $black: #000;
-$white: #FFF;
 $orange: #F90;
 $cream: #FFFCF3;
 $red: #E61C40;
@@ -38,7 +37,7 @@ button {
 
 a {
     text-decoration: none;
-    color: $white;
+    color: $cream;
 }
 
 h2 {

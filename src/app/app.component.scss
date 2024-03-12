@@ -5,3 +5,9 @@ app-header {
     right: 0;
     z-index: 5;
 }
+
+app-menu {
+    position: fixed;
+    inset: 5.75rem 0 0 0;
+    z-index: 5;
+}
