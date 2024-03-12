@@ -9,15 +9,7 @@ main {
     flex-shrink: 0;
     flex-direction: row;
 
-    >img {
-        width: 38.75rem;
-        height: 24.5625rem;
-        mix-blend-mode: luminosity;
-        // Change when frame is implemented?
-        object-fit: cover;
-    }
-
-    >div {
+    >div:not(.thumbnail) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -32,6 +24,25 @@ main {
             font-weight: 700;
         }
     }
+
+    &:hover {
+        .thumbnail {
+            >img {
+                filter: grayscale(0);
+            }
+            >div {
+                opacity: 1;
+                margin: 1.25rem 0 0 1.25rem;
+                >img {
+                    animation: 150ms linear awake forwards;
+                }
+            }
+        }
+        .description {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 }
 
 .description {
@@ -43,6 +54,9 @@ main {
     gap: 2.1875rem;
     flex-shrink: 0;
     margin-bottom: 3.75rem;
+    transform: translateX(-38.6875rem);
+    opacity: 0;
+    transition: transform 150ms ease-out, opacity 300ms ease-out;
 
     >div:first-child {
         display: flex;
@@ -81,5 +95,100 @@ main {
             padding: calc(1.25rem - 4px) calc(3.75rem - 4px);
             border: 4px solid $black;
         }
+    }
+}
+
+.backwards {
+    >.thumbnail {
+        >div {
+            justify-content: flex-start !important;
+            >img {
+                margin-left: calc(-1.5rem - 2px);
+            }
+        }
+    }
+
+    .description {
+        transform: translateX(38.6875rem);
+    }
+
+    &:hover {
+        .thumbnail {
+            >div {
+                margin: 1.25rem 1.25rem 0 -1.25rem !important;
+                >img {
+                    animation: 150ms linear awakeBackwards forwards !important;
+                }
+            }
+        }
+    }
+}
+
+.thumbnail {
+    z-index: 1;
+
+    >img {
+        width: 38.75rem;
+        height: 24.5625rem;
+        filter: grayscale(1);
+        object-fit: cover;
+        transition: 50ms ease-in;
+    }
+
+    >div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: absolute;
+        width: calc(38.75rem - 8px);
+        height: calc(24.5625rem - 8px);
+        border: 4px solid $black;
+        z-index: 1;
+        transition: 80ms linear;
+
+        opacity: 0;
+
+        >img {
+            transform: rotate(135deg);
+            width: 3rem;
+            height: 3rem;
+            margin-right: calc(-1.5rem - 2px);
+            flex-shrink: 0;
+            flex-shrink: 0;
+
+
+
+        }
+    }
+}
+
+@keyframes awakeBackwards {
+    0% {
+        width: 3rem;
+        height: 3rem;
+        margin-left: calc(-1.5rem - 2px);
+    }
+
+    100% {
+        transform: rotate(0);
+        width: 4.73138rem;
+        height: 4.73138rem;
+        margin-left: calc(-2.36569rem - 2px);
+    }
+}
+
+@keyframes awake {
+
+    0% {
+        width: 3rem;
+        height: 3rem;
+        margin-right: calc(-1.5rem - 2px);
+    }
+
+    100% {
+        transform: rotate(0);
+        width: 4.73138rem;
+        height: 4.73138rem;
+        margin-right: calc(-2.36569rem - 2px);
     }
 }

@@ -1,5 +1,10 @@
-<main [ngStyle]="{'flex-direction': index % 2 == 0 ? 'row' : 'row-reverse'}">
-    <img src="../../../../assets/img/projects/{{ project.path }}.png" alt="{{ project.name }}">
+<main [class.backwards]= "index % 2 == 1" [ngStyle]="{'flex-direction': index % 2 == 0 ? 'row' : 'row-reverse'}">
+    <div class="thumbnail">
+        <div>
+            <img src="../../../../assets/img/arrows/icon/arrow-icon.svg">
+        </div>
+        <img src="../../../../assets/img/projects/{{ project.path }}.png" alt="{{ project.name }}">
+    </div>
     <div [ngStyle]="{'align-items': index % 2 == 0 ? 'flex-end' : 'flex-start'}">
         <span>{{ project.number }}/03</span>
         <div class="description">
