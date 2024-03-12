@@ -20,3 +20,55 @@ main {
         width: 2.5rem;
     }
 }
+
+.closeMenuAni {
+    animation: 200ms closeBurgerMenu ease-out forwards;
+}
+
+.openMenuAni {
+    animation: 200ms openBurgerMenu ease-out forwards;
+}
+
+@keyframes openBurgerMenu {
+    0% {
+        content: url(../../../../assets/img/burger-menu/1-open.svg);
+    }
+
+    25% {
+        content: url(../../../../assets/img/burger-menu/2-trans.svg);
+    }
+
+    50% {
+        content: url(../../../../assets/img/burger-menu/3-trans.svg);
+    }
+
+    75% {
+        content: url(../../../../assets/img/burger-menu/4-trans.svg);
+    }
+
+    100% {
+        content: url(../../../../assets/img/burger-menu/5-close.svg);
+    }
+}
+
+@keyframes closeBurgerMenu {
+    100% {
+        content: url(../../../../assets/img/burger-menu/1-open.svg);
+    }
+
+    75% {
+        content: url(../../../../assets/img/burger-menu/2-trans.svg);
+    }
+
+    50% {
+        content: url(../../../../assets/img/burger-menu/3-trans.svg);
+    }
+
+    25% {
+        content: url(../../../../assets/img/burger-menu/4-trans.svg);
+    }
+
+    0% {
+        content: url(../../../../assets/img/burger-menu/5-close.svg);
+    }
+}

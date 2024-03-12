@@ -44,19 +44,20 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 1440px;
-    height: 318px;
+    width: 90rem;
+    height: 19.875rem;
     flex-shrink: 0;
     background-position: 0 4.4rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../../../../assets/img/background-menu.svg);
     // Change for responsiveness
+    // TODO: fix background cropped right bottom because of overflow hidden (scrollbar hidden)
 
     >div {
         width: calc(100% - 6.3125rem - 6.25rem);
-        height: calc(100% - 3.625rem);
-        margin: 0 6.3125rem 3.625rem 6.25rem;
+        height: calc(100% - 2.5rem);
+        padding: 0 6.3125rem 2.5rem 6.25rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
