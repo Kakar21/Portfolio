@@ -59,7 +59,7 @@ main {
         }
 
         >span {
-            color: var(--yellow, #F90);
+            color: $orange;
             font-size: 1.4375rem;
             line-height: 120%;
         }
@@ -76,19 +76,10 @@ main {
         gap: 1.5rem;
 
         >button {
-            color: var(--Black, #000);
-            font-family: Overpass;
             font-size: 1.4375rem;
-            font-style: normal;
-            font-weight: 400;
             line-height: 120%;
-            /* 1.725rem */
-            display: flex;
             padding: calc(1.25rem - 4px) calc(3.75rem - 4px);
-            justify-content: center;
-            align-items: center;
-            gap: 0.625rem;
-            border: 4px solid var(--Black, #000);
+            border: 4px solid $black;
         }
     }
 }

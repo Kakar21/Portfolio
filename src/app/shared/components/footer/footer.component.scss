@@ -11,7 +11,7 @@ main {
     color: $white;
     gap: 0.06rem;
 
-    >div {
+    >div:not(.link) {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -39,10 +39,7 @@ main {
         }
     }
 
-    >a {
-        padding: 0.3125rem 0.25rem 0.5rem 0.625rem;
-        line-height: 120%;
-    }
+
 }
 
 .socials {
@@ -71,6 +68,42 @@ main {
                 transform: translateY(-0.8125rem);
             }
 
+        }
+    }
+}
+
+.link {
+    display: inline-flex;
+    padding: 0.3125rem 0.625rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.1875rem;
+
+    >a {
+        line-height: 120%;
+        transition: 100ms ease-in;
+    }
+
+    >div {
+        transition: transform 100ms ease-in, opacity 100ms ease-out;
+        width: 3.46875rem;
+        height: 0;
+        border: 1px solid $orange;
+        margin-top: -2px;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    &:hover {
+        align-items: flex-end;
+
+        >a {
+            font-weight: 700;
+        }
+
+        >div {
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 }
