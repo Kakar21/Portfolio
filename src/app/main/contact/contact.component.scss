@@ -43,8 +43,9 @@ h2 {
 .field {
     position: relative;
     display: flex;
+    flex-direction: column;
 
-    >span {
+    >label {
         padding-right: 2px;
         top: 0.9375rem;
         left: 1.5625rem;
@@ -74,8 +75,8 @@ h2 {
     >input,
     textarea {
 
-        &:focus+span,
-        &:valid+span {
+        &:focus+label,
+        &:valid+label {
             animation: 300ms placeholderShowUp ease-out forwards;
             z-index: 1;
         }
@@ -157,7 +158,7 @@ form {
 
 }
 
-#privacy-policy {
+#privacyPolicy {
     appearance: none;
     -webkit-appearance: none;
     display: inline-block;
@@ -178,6 +179,12 @@ form {
     &:checked:hover {
         background-image: url(../../../assets/img/symbols/checked-hover.svg);
     }
+
+}
+
+.privacy-policy-c {
+    display: flex;
+    flex-direction: column;
 }
 
 .scroll-up {
@@ -204,6 +211,27 @@ form {
         >img {
             transform: translateY(0.1rem);
         }
+    }
+}
+
+.error {
+    color: #E61C40;
+    font-family: Overpass;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    animation: 300ms errorAwake ease-out forwards;
+    /* 0.9rem */
+}
+
+@keyframes errorAwake {
+    0% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: 0.625rem;
     }
 }
 
