@@ -1,5 +1,5 @@
 <main>
-    <div>
+    <div [ngClass]="menuOpen ? null : 'hideAni100'">
         <div class="section">
             <h1>About me</h1>
             <div class="edge"></div>
@@ -14,7 +14,7 @@
             <!-- TODO: Link everything -->
         </div>
     </div>
-    <footer>
+    <footer [ngClass]="menuOpen ? null : 'hideAni150'">
         <div>
             <h2>Say Hi!</h2>
             <div>

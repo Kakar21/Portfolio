@@ -17,6 +17,7 @@ main {
         height: 35.6875rem;
         margin-top: 0.0625rem;
         margin-bottom: 11.8125rem;
+        animation: 100ms showUp ease-in-out forwards;
     }
 }
 
@@ -79,6 +80,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../../../../assets/img/background-menu.svg);
+    animation: 150ms showUp ease-in-out forwards;
     // Change for responsiveness
     // TODO: fix background cropped right bottom because of overflow hidden (scrollbar hidden)
 
@@ -147,6 +149,34 @@ footer {
             }
 
         }
+    }
+}
+
+.hideAni100 {
+    animation: 100ms hide ease-in-out forwards !important;
+}
+
+.hideAni150 {
+    animation: 150ms hide ease-in-out forwards !important;
+}
+
+@keyframes showUp {
+    0% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes hide {
+    100% {
+        transform: translateY(50%);
+    }
+
+    0% {
+        transform: translateY(0);
     }
 }
 

@@ -14,9 +14,18 @@ import { NgClass, NgStyle } from '@angular/common';
 })
 export class AppComponent {
   title = 'portfolio';
+  menuOpenValue = false;
   menuOpen = false;
 
   public toggelMenu($event: any): void {
-    this.menuOpen = $event;
+    this.menuOpenValue = $event;
+    if (!$event) {
+      setTimeout(() => {
+        this.menuOpen = $event;
+      }, 100);
+    } else {
+      this.menuOpen = $event;
+    }
+
   }
 }

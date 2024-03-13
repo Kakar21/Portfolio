@@ -14,13 +14,14 @@ export class HeaderComponent {
   open = false;
   public openMenu(value: boolean) {
     this.open = value;
+    this.newOpenMenu.emit(value);
 
     if (value) {
       document.body.classList.add('overflow-h');
     } else {
-      document.body.classList.remove('overflow-h');
+      setTimeout(() => {
+        document.body.classList.remove('overflow-h');
+      }, 100);
     }
-
-    this.newOpenMenu.emit(value);
   }
 }
