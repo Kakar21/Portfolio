@@ -27,7 +27,7 @@ main {
 }
 
 .job-title {
-    color: #000;
+    color: $black;
     text-align: center;
     font-family: Syne;
     font-size: 8rem;
@@ -46,7 +46,7 @@ main {
 }
 
 .name {
-    color: #F90;
+    color: $orange;
     text-align: center;
     font-size: 3rem;
     font-weight: 700;

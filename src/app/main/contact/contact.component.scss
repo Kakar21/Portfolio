@@ -45,6 +45,17 @@ h2 {
     display: flex;
     flex-direction: column;
 
+    >img {
+        top:0.78125rem;
+        right: 1.5625rem;
+        bottom: 0.78125rem;
+        position: absolute;
+        width: 1.56556rem;
+        height: 1.5625rem;
+        flex-shrink: 0;
+        animation: 300ms ease-out blendIn forwards;
+    }
+
     >label {
         padding-right: 2px;
         top: 0.9375rem;
@@ -125,14 +136,23 @@ form {
     }
 
     >button {
-        color: #BBB;
+        color: $cream;
         margin-top: -0.5rem;
         font-size: 1.4375rem;
         line-height: 120%;
         padding: calc(1.25rem - 4px) calc(3.75rem - 4px);
         gap: 0.625rem;
-        border: 4px solid #BBB;
+        border: 4px solid $cream;
+    }
+
+    >button:disabled {
         opacity: 0.3;
+    }
+
+    >button:not(:disabled):active {
+        background-color: $cream !important;
+        font-weight: 400 !important;
+        color: $black !important;
     }
 
     >div:not(.field) {
@@ -150,8 +170,15 @@ form {
 
             >a {
                 color: $orange;
-                padding: 0.3125rem 0.4375rem;
+                width: 6.25rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 flex-shrink: 0;
+
+                &:hover {
+                    font-weight: 700;
+                }
             }
         }
     }
@@ -185,6 +212,7 @@ form {
 .privacy-policy-c {
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
 }
 
 .scroll-up {
@@ -215,7 +243,7 @@ form {
 }
 
 .error {
-    color: #E61C40;
+    color: $red;
     font-family: Overpass;
     font-size: 0.75rem;
     font-style: normal;
@@ -232,6 +260,16 @@ form {
 
     100% {
         margin-top: 0.625rem;
+    }
+}
+
+@keyframes blendIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 

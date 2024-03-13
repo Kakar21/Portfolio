@@ -23,12 +23,12 @@ button {
     background-color: transparent;
     transition: 100ms ease-in-out;
 
-    &:hover {
+    &:not(:disabled):hover {
         font-weight: 700 !important;
         padding: calc(1.25rem - 4px) calc(5rem - 4px) !important;
     }
 
-    &:active {
+    &:not(:disabled):active {
         color: $cream !important;
         font-weight: 400 !important;
         background: $black !important;
