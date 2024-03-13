@@ -51,11 +51,17 @@ h2 {
 input,
 textarea {
     border: 0;
+    border-radius: 0;
+
+    &:focus {
+        outline: 0;
+    }
 }
 
 
 .overflow-h {
     overflow: hidden;
 }
+
 
 // TODO: Custom Scrollbar

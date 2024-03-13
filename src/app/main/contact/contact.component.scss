@@ -40,6 +40,48 @@ h2 {
     letter-spacing: 0.04875rem;
 }
 
+.field {
+    position: relative;
+    display: flex;
+
+    >span {
+        padding-right: 2px;
+        top: 0.9375rem;
+        left: 1.5625rem;
+        position: absolute;
+        color: $cream;
+        font-family: Overpass;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        background-color: $black;
+    }
+
+    &:hover {
+
+        >input,
+        textarea {
+            border-top: 4px solid transparent !important;
+            border-right: 4px solid transparent !important;
+            border-left: 4px solid transparent !important;
+            border-color: $cream !important;
+            border-bottom: 4px solid $cream !important;
+            margin: 0 !important;
+        }
+    }
+
+    >input,
+    textarea {
+
+        &:focus+span,
+        &:valid+span {
+            animation: 300ms placeholderShowUp ease-out forwards;
+            z-index: 1;
+        }
+    }
+}
+
 form {
     margin-top: 0.125rem;
     display: inline-flex;
@@ -47,22 +89,37 @@ form {
     align-items: center;
     gap: 1.25rem;
 
-    >input,
+    .field input {
+        height: calc(3.125rem - 0.9375rem - 0.9375rem - 6px);
+    }
+
     textarea {
-        width: 35.4375rem;
+        height: calc(12.625rem - 0.9375rem - 0.9375rem - 6px);
+    }
+
+    >.field input,
+    .field textarea {
+        width: calc(35.4375rem - 8px);
         padding: 0.9375rem 1.5625rem;
         background-color: $black;
         border-bottom: 2px solid $cream;
         color: $cream;
         resize: none;
+        margin: 4px 4px 2px 4px;
+        z-index: 1;
+        background-color: unset;
+        font-size: 1rem;
+        line-height: 120%;
+        /* 1.2rem */
 
-        &::placeholder {
-            color: $cream;
-            font-family: Overpass;
-            font-size: 1rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 120%;
+        &:focus {
+            margin: 2px !important;
+            border: 2px solid $cream !important;
+        }
+
+        &:not(:focus):valid {
+            border: 1px solid $cream !important;
+            margin: 3px !important;
         }
     }
 
@@ -77,7 +134,7 @@ form {
         opacity: 0.3;
     }
 
-    >div {
+    >div:not(.field) {
         display: flex;
         margin-top: -0.25rem;
 
@@ -147,5 +204,15 @@ form {
         >img {
             transform: translateY(0.1rem);
         }
-    }   
+    }
+}
+
+@keyframes placeholderShowUp {
+    0% {
+        top: 0.9375rem;
+    }
+
+    100% {
+        top: -0.375rem;
+    }
 }
