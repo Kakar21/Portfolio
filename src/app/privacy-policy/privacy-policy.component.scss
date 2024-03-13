@@ -1,0 +1,14 @@
+@import "../../styles.scss";
+@import "../../app/legal-notice/legal-notice.component.scss";
+
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+}
+
+::marker {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 120%;
+}
