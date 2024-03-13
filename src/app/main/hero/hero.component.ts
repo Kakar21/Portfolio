@@ -9,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class HeroComponent {
 
+  scrollToSection(section: string | null) {
+    if (section) {
+      document.getElementById(section)?.scrollIntoView();
+    }
+  }
 }

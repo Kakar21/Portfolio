@@ -1,5 +1,5 @@
 import { NgClass, NgStyle } from '@angular/common';
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,8 +10,10 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent {
   @Output() newOpenMenu = new EventEmitter<boolean>();
-
   open = false;
+
+
+
   public openMenu(value: boolean) {
     this.open = value;
     this.newOpenMenu.emit(value);

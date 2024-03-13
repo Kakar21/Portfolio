@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -15,5 +15,10 @@ export class MenuComponent {
     this.menuOpen = false;
   }
 
-
+  scrollToSection(section: string | null) {
+    if (section) {
+      // this.menuOpen = false;
+      document.getElementById(section)?.scrollIntoView();
+    }
+  }
 }

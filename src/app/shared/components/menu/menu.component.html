@@ -1,14 +1,15 @@
 <main>
     <div [ngClass]="menuOpen ? null : 'hideAni100'">
-        <div class="section">
+        <div (click)="scrollToSection('about-me')" class="section">
             <h1>About me</h1>
             <div class="edge"></div>
         </div>
-        <div class="section">
+        <div (click)="scrollToSection('my-skills')" class="section">
             <h1>My skills</h1>
             <div class="edge"></div>
         </div>
-        <div class="section">
+        <div (click)="scrollToSection('portfolio')" class="section">
+            <!-- TODO: scrolls to far -->
             <h1>Portfolio</h1>
             <div class="edge"></div>
             <!-- TODO: Link everything -->

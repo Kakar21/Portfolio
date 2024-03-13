@@ -22,4 +22,10 @@ export class ContactComponent {
       console.log(this.contactData)
     }
   }
+
+  scrollToSection(section: string | null) {
+    if (section) {
+      document.getElementById(section)?.scrollIntoView();
+    }
+  }
 }
