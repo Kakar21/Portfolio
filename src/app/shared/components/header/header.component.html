@@ -1,5 +1,4 @@
 <main>
-    <img src="../../../../assets/img/logo/logo-black.svg" alt="GK">
-    <img src="../../../../assets/img/burger-menu/1-open.svg" alt="Menu" [ngClass]="open ? 'openMenuAni' : 'closeMenuAni'" (click)="open ? openMenu(false) : openMenu(true)">
+    <img [routerLink]="''" (click)="scrollToSection('hero')" src="../../../../assets/img/logo/logo-black.svg" alt="GK">
+    <img src="../../../../assets/img/burger-menu/1-open.svg" alt="Menu" [ngClass]="menuOpen ? 'openMenuAni' : 'closeMenuAni'" (click)="menuOpen ? openMenu(false) : openMenu(true)">
 </main>
-<!-- TODO: Fix bug?: animation playing while page loads -->

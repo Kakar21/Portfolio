@@ -68,5 +68,18 @@ textarea {
     display: none !important;
 }
 
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+	width: 12px; /* vertical scrollbar */
+	height: 12px; /* horizontal scrollbar */
+}
 
-// TODO: Custom Scrollbar
+*::-webkit-scrollbar-track {
+	background: #F0DBC7;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: $orange;
+	// border-radius: 4px;
+}
+/* Chrome, Edge, Safari */

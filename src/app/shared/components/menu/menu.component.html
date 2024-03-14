@@ -1,18 +1,16 @@
 <main>
     <div [ngClass]="menuOpen ? null : 'hideAni100'">
-        <div (click)="scrollToSection('about-me')" class="section">
+        <div [routerLink]="''" (click)="scrollToSection('about-me')" class="section">
             <h1>About me</h1>
             <div class="edge"></div>
         </div>
-        <div (click)="scrollToSection('my-skills')" class="section">
+        <div [routerLink]="''" (click)="scrollToSection('my-skills')" class="section">
             <h1>My skills</h1>
             <div class="edge"></div>
         </div>
-        <div (click)="scrollToSection('portfolio')" class="section">
-            <!-- TODO: scrolls to far -->
+        <div [routerLink]="''" (click)="scrollToSection('portfolio')" class="section">
             <h1>Portfolio</h1>
             <div class="edge"></div>
-            <!-- TODO: Link everything -->
         </div>
     </div>
     <footer [ngClass]="menuOpen ? null : 'hideAni150'">

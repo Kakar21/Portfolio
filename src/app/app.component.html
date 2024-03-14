@@ -1,4 +1,4 @@
-<app-header (newOpenMenu)="toggelMenu($event)"></app-header>
-<app-menu [menuOpen]="menuOpenValue" [ngStyle]="{'display': menuOpen ? 'unset' : 'none'}"></app-menu>
+<app-header (newOpenMenu)="toggelMenu($event)" [menuOpen]="menuOpenValue"></app-header>
+<app-menu (newOpenMenu)="toggelMenu($event)" [menuOpen]="menuOpenValue" [ngStyle]="{'display': menuOpen ? 'unset' : 'none'}"></app-menu>
 <router-outlet/>
 <app-footer></app-footer>

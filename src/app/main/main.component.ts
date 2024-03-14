@@ -6,7 +6,6 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ArrowComponent } from './arrow/arrow.component';
 import { NgStyle } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -24,13 +23,6 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './main.component.scss'
 })
 export class MainComponent {
-
-  activeRoute: ActivatedRoute = inject(ActivatedRoute);
-  constructor() {
-    this.activeRoute.fragment.subscribe((data) => {
-      this.scrollToSection(data);
-    });
-  }
 
   scrollToSection(section: string | null) {
     if (section) {
