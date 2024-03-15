@@ -1,10 +1,9 @@
 <main>
     <img [routerLink]="''" (click)="scrollToSection('hero'); openMenu(false)" src="../../../../assets/img/logo/logo-black.svg" alt="GK">
-    <div>
-        <span (click)="changeLang('de')">DE</span>
+    <div class="language">
+        <span (click)="changeLang('de')" [ngClass]="{'selected': lang === 'de'}">DE</span>
         <span>|</span>
-        <span (click)="changeLang('en')">EN</span>
-        <h1>{{ 'job-title' | translate }}</h1>
+        <span (click)="changeLang('en')" [ngClass]="{'selected': lang === 'en'}">EN</span>
     </div>
     <img src="../../../../assets/img/burger-menu/1-open.svg" alt="Menu" [ngClass]="menuOpen ? 'openMenuAni' : 'closeMenuAni'" (click)="menuOpen ? openMenu(false) : openMenu(true)">
 </main>

@@ -22,7 +22,7 @@ export class HeaderComponent {
   }
 
   changeLang(langCode: string) {
-
+    this.lang = langCode;
     localStorage.setItem('lang', langCode);
 
     this.translateService.use(langCode);

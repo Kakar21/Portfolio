@@ -21,6 +21,39 @@ main {
     }
 }
 
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 8rem;
+    font-size: 1.25rem;
+
+    >span {
+        transition: 100ms ease-in-out;
+    }
+
+    >span:last-child {
+        position: absolute;
+        right: 0;
+        padding: 1rem;
+    }
+    >span:first-child {
+        position: absolute;
+        left: 0;
+        padding: 1rem; 
+    }
+
+    >span:not(:nth-child(2)):hover {
+        color: $orange;
+    }
+}
+
+.selected {
+    color: $orange;
+    font-weight: 900 !important;
+}
+
 .closeMenuAni {
     animation: 200ms closeBurgerMenu ease-out forwards;
 }
