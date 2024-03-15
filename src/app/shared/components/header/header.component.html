@@ -1,4 +1,10 @@
 <main>
     <img [routerLink]="''" (click)="scrollToSection('hero'); openMenu(false)" src="../../../../assets/img/logo/logo-black.svg" alt="GK">
+    <div>
+        <span (click)="changeLang('de')">DE</span>
+        <span>|</span>
+        <span (click)="changeLang('en')">EN</span>
+        <h1>{{ 'job-title' | translate }}</h1>
+    </div>
     <img src="../../../../assets/img/burger-menu/1-open.svg" alt="Menu" [ngClass]="menuOpen ? 'openMenuAni' : 'closeMenuAni'" (click)="menuOpen ? openMenu(false) : openMenu(true)">
 </main>

@@ -56,9 +56,9 @@
             </div>
 
             <div class="privacy-policy-c">
-                <label for="privacy-policy"><input #privacyPolicy="ngModel" [(ngModel)]="contactData.privacyPolicy"
+                <label for="privacy-policy"><input id="checkbox" #privacyPolicy="ngModel" [(ngModel)]="contactData.privacyPolicy"
                         type="checkbox" id="privacyPolicy" name="privacyPolicy" required>I've read the <a
-                        href="">privacy
+                        href="./privacy-policy" target="_blank">privacy
                         policy</a> and agree to the processing of my data as
                     outlined.</label>
                 @if (!contactData.privacyPolicy && (contactForm.submitted || privacyPolicy.touched)) {

@@ -1,11 +1,12 @@
 import { NgClass, NgStyle } from '@angular/common';
 import { Component, Output, EventEmitter, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgClass, NgStyle, RouterLink],
+  imports: [NgClass, NgStyle, RouterLink, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -13,8 +14,18 @@ export class HeaderComponent {
   @Output() newOpenMenu = new EventEmitter<boolean>();
   @Input() menuOpen: boolean;
 
-  constructor() {
+  lang = localStorage.getItem('lang') || 'en';
+
+  constructor(private translateService: TranslateService) {
     this.menuOpen = false;
+    console.log(this.lang);
+  }
+
+  changeLang(langCode: string) {
+
+    localStorage.setItem('lang', langCode);
+
+    this.translateService.use(langCode);
   }
 
   scrollToSection(section: string | null) {
