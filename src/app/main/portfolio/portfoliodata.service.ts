@@ -35,7 +35,7 @@ export class PortfoliodataService {
       link: '',
       github: ''
     },
-    // TODO: create project images and change the paths
+    // TODO: change the paths
     // TODO: Add live links
   ];
 }

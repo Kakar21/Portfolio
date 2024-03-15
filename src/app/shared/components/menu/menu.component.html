@@ -17,8 +17,15 @@
         <div>
             <h2>Say Hi!</h2>
             <div>
-                <span>sefan(at)gmail.com</span>
-                <!-- TODO: Add copy feature -->
+                <div>
+                    <span>ghulammustafa&#64;kakar.dev</span>
+                    @if (copied) {
+                        <img class="success" src="../../../../assets/img/symbols/success-green.svg" alt="Copied">
+                    } @else {
+                        <img (click)="copyToClipboard()" src="../../../../assets/img/symbols/copy.svg" alt="Copy">
+                    }
+                    
+                </div>
                 <div class="socials">
                     <a href="https://github.com/Kakar21" target="_blank"><img src="../../../../assets/img/socials/github.svg" alt="Github"></a>
                     <a href="mailto:ghulammustafa@kakar.dev"><img src="../../../../assets/img/socials/mail.svg" alt="E-Mail"></a>
