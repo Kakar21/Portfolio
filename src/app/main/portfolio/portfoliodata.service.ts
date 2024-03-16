@@ -19,7 +19,7 @@ export class PortfoliodataService {
     },
     {
       name: 'Sharkie',
-      path: 'sharkie-01',
+      path: 'sharkie',
       number: '02',
       tools: 'JavaScript | HTML | CSS',
       description: 'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
@@ -28,7 +28,7 @@ export class PortfoliodataService {
     },
     {
       name: 'Portfolio',
-      path: 'sharkie',
+      path: 'portfolio',
       number: '03',
       tools: 'Angular | TypeScript | HTML | SCSS',
       description: "This website is my personal showcase as a Front-End Developer. It presents my skills and projects elegantly to impress potential employers.",
@@ -37,13 +37,12 @@ export class PortfoliodataService {
     },
     {
       name: 'Simple CRM',
-      path: 'sharkie',
+      path: 'simple-crm',
       number: '04',
       tools: 'Angular | TypeScript | HTML | SCSS | Firebase',
       description: 'A very Simple Customer Relationship Management system working with CRUD functionality. [COMING SOON]',
       link: '',
       github: ''
     },
-    // TODO: change the paths
   ];
 }

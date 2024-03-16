@@ -1,8 +1,8 @@
 <main>
     <h2>Say Hi!</h2>
     <div>
-        <h6>Want to discuss a new project?</h6>
-        <p>Say hello! let's discuss your ideas and make it happen</p>
+        <h6>Want to discuss a project?</h6>
+        <p>Say hello! Let's discuss your ideas and make it happen.</p>
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div class="field">
                 <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" required>
