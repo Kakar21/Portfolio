@@ -1,11 +1,11 @@
 <main>
     <div [ngClass]="menuOpen ? null : 'hideAni100'">
         <div [routerLink]="''" (click)="scrollToSection('about-me')" class="section">
-            <h1>About me</h1>
+            <h1>{{ "about-me" | translate }}</h1>
             <div class="edge"></div>
         </div>
         <div [routerLink]="''" (click)="scrollToSection('my-skills')" class="section">
-            <h1>My skills</h1>
+            <h1>{{ "my-skills" | translate }}</h1>
             <div class="edge"></div>
         </div>
         <div [routerLink]="''" (click)="scrollToSection('portfolio')" class="section">

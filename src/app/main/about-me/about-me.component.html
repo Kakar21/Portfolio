@@ -1,14 +1,12 @@
 <main>
-    <h2>About me</h2>
+    <h2>{{ "about-me" | translate }}</h2>
     <div>
         <div>
-            <p>I am a Front-end developer based in Kassel, Germany. I enjoy helping designers and companies bring their
-                ideas into real life. I am looking forward to continuing my developer career with a job in a junior web
-                developer position.<br>
+            <p>{{ "about-me-p" | translate }}<br>
                 <br>
-                If you think I’d be a good match for your projects, contact me!
+                {{ "about-me-br" | translate }}
             </p>
-            <button (click)="scrollToSection('contact')">Let’s talk</button>
+            <button (click)="scrollToSection('contact')">{{ "about-me-button" | translate }}</button>
         </div>
         <div class="portrait">
             <div></div>

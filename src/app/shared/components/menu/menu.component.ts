@@ -2,11 +2,12 @@ import { NgClass } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import {Clipboard} from '@angular/cdk/clipboard';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [NgClass, RouterLink],
+  imports: [NgClass, RouterLink, TranslateModule],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })

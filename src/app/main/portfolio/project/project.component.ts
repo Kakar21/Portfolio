@@ -1,10 +1,11 @@
 import { NgClass, NgStyle } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [NgStyle, NgClass],
+  imports: [NgStyle, NgClass, TranslateModule],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'
 })
