@@ -9,6 +9,10 @@ main {
     background-color: $cream;
     font-family: 'Syne';
 
+    >img {
+        cursor: pointer;
+    }
+
     >img:first-child {
         width: 4.16669rem;
         height: 1.875rem;
@@ -29,10 +33,6 @@ main {
     width: 8rem;
     font-size: 1.25rem;
 
-    >span {
-        transition: 100ms ease-in-out;
-    }
-
     >span:last-child {
         position: absolute;
         right: 0;
@@ -46,6 +46,8 @@ main {
 
     >span:not(:nth-child(2)):hover {
         color: $orange;
+        transition: 100ms ease-in-out;
+        cursor: pointer;
     }
 }
 

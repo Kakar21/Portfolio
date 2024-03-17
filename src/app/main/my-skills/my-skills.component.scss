@@ -49,6 +49,8 @@ h2 {
         >img {
             height: 4.6875rem;
             transition: 100ms ease-in-out;
+            filter: invert(71%) sepia(89%) saturate(3345%) hue-rotate(357deg) brightness(0) contrast(110%);            
+
         }
     }
 
@@ -65,7 +67,7 @@ h2 {
 
             >img {
                 animation: 500ms spin 100ms ease-in-out;
-                filter: invert(71%) sepia(89%) saturate(3345%) hue-rotate(357deg) brightness(103%) contrast(110%);            
+                filter: invert(71%) sepia(89%) saturate(3345%) hue-rotate(357deg) brightness(103%) contrast(110%);   
             }
         }
         

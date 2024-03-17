@@ -6,9 +6,9 @@
                 <br>
                 {{ "about-me-br" | translate }}
             </p>
-            <button (click)="scrollToSection('contact')">{{ "about-me-button" | translate }}</button>
+            <button (click)="scrollToSection('contact')" class="noselect">{{ "about-me-button" | translate }}</button>
         </div>
-        <div class="portrait">
+        <div class="portrait noselect">
             <div></div>
             <img src="../../../assets/img/portrait.jpg" alt="Portrait">
         </div>

@@ -1,11 +1,13 @@
-<main>
-    <img [routerLink]="''" (click)="scrollToSection('hero'); openMenu(false)" src="../../../../assets/img/logo/logo-black.svg" alt="GK">
+<main class="noselect">
+    <img [routerLink]="''" (click)="scrollToSection('hero'); openMenu(false)"
+        src="../../../../assets/img/logo/logo-black.svg" alt="GK">
     @if(!legalLink) {
-        <div class="language">
-            <span (click)="changeLang('de')" [ngClass]="{'selected': lang === 'de'}">DE</span>
-            <span>|</span>
-            <span (click)="changeLang('en')" [ngClass]="{'selected': lang === 'en'}">EN</span>
-        </div>
+    <div class="language">
+        <span (click)="changeLang('de')" [ngClass]="{'selected': lang === 'de'}">DE</span>
+        <span>|</span>
+        <span (click)="changeLang('en')" [ngClass]="{'selected': lang === 'en'}">EN</span>
+    </div>
     }
-    <img src="../../../../assets/img/burger-menu/1-open.svg" alt="Menu" [ngClass]="menuOpen ? 'openMenuAni' : 'closeMenuAni'" (click)="menuOpen ? openMenu(false) : openMenu(true)">
+    <img src="../../../../assets/img/burger-menu/1-open.svg" alt="Menu"
+        [ngClass]="menuOpen ? 'openMenuAni' : 'closeMenuAni'" (click)="menuOpen ? openMenu(false) : openMenu(true)">
 </main>

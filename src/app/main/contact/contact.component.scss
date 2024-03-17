@@ -71,10 +71,12 @@ h2 {
         background-color: $black;
     }
 
-    &:hover {
 
-        >input,
-        textarea {
+
+    >input,
+    textarea {
+
+        &:hover {
             border-top: 4px solid transparent !important;
             border-right: 4px solid transparent !important;
             border-left: 4px solid transparent !important;
@@ -82,10 +84,10 @@ h2 {
             border-bottom: 4px solid $cream !important;
             margin: 0 !important;
         }
-    }
 
-    >input,
-    textarea {
+        &:not(:focus) {
+            cursor: pointer;
+        }
 
         &:focus+label,
         &:valid+label {
@@ -204,6 +206,7 @@ form {
 
 #privacyPolicy {
     appearance: none;
+    cursor: pointer;
     -webkit-appearance: none;
     display: inline-block;
     position: absolute;
@@ -233,6 +236,7 @@ form {
 }
 
 .scroll-up {
+    cursor: pointer;
     margin-top: -7rem;
     align-self: flex-end;
     display: flex;

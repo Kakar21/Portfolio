@@ -6,13 +6,13 @@
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div class="field">
                 <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" required>
-                <label for="name">{{ "name" | translate }}</label>
+                <label class="noselect" for="name">{{ "name" | translate }}</label>
 
                 @if (name.touched) {
                 @if (name.valid) {
-                <img src="../../../assets/img/symbols/success-green.svg">
+                <img class="noselect" src="../../../assets/img/symbols/success-green.svg">
                 }@else {
-                <img src="../../../assets/img/symbols/attention-red.svg">
+                <img class="noselect" src="../../../assets/img/symbols/attention-red.svg">
                 }
                 }
 
@@ -23,13 +23,13 @@
             <div class="field">
                 <input #email="ngModel" [(ngModel)]="contactData.email" type="text" id="email" name="email" required
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-                <label for="email">{{ "email" | translate }}</label>
+                <label class="noselect" for="email">{{ "email" | translate }}</label>
 
                 @if (email.touched) {
                 @if (email.valid) {
-                <img src="../../../assets/img/symbols/success-green.svg">
+                <img class="noselect" src="../../../assets/img/symbols/success-green.svg">
                 }@else {
-                <img src="../../../assets/img/symbols/attention-red.svg">
+                <img class="noselect" src="../../../assets/img/symbols/attention-red.svg">
                 }
                 }
 
@@ -40,13 +40,13 @@
             <div class="field">
                 <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" cols="30"
                     rows="10" required></textarea>
-                <label for="message">{{ "message" | translate }}</label>
+                <label class="noselect" for="message">{{ "message" | translate }}</label>
 
                 @if (message.touched) {
                 @if (message.valid) {
-                <img src="../../../assets/img/symbols/success-green.svg">
+                <img class="noselect" src="../../../assets/img/symbols/success-green.svg">
                 }@else {
-                <img src="../../../assets/img/symbols/attention-red.svg">
+                <img class="noselect" src="../../../assets/img/symbols/attention-red.svg">
                 }
                 }
 
@@ -65,15 +65,15 @@
             </div>
 
             @if (mailSent) {
-            <button type="submit" value="Submit" disabled>{{ "thanks" | translate }}<img src="../../../assets/img/symbols/success-green.svg"></button>
+            <button class="noselect" type="submit" value="Submit" disabled>{{ "thanks" | translate }}<img src="../../../assets/img/symbols/success-green.svg"></button>
             } @else if (contactForm.valid) {
-            <button type="submit" value="Submit">{{ "send" | translate }}</button>
+            <button class="noselect" type="submit" value="Submit">{{ "send" | translate }}</button>
             } @else {
-            <button type="submit" value="Submit" class="disabled">{{ "send" | translate }}</button>
+            <button type="submit" value="Submit" class="disabled noselect">{{ "send" | translate }}</button>
             }
         </form>
     </div>
-    <div (click)="scrollToSection('hero')" class="scroll-up">
+    <div (click)="scrollToSection('hero')" class="scroll-up noselect">
         <img src="../../../assets/img/arrows/scroll-up/2.svg" alt="Scroll Up">
     </div>
 </main>

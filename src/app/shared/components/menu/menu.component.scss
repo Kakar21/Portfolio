@@ -29,6 +29,7 @@ main {
     width: 36.25rem;
     height: 10.4375rem;
     position: relative;
+    cursor: pointer;
 
     >h1 {
         color: $black;
@@ -117,6 +118,7 @@ footer {
                     width: 1.5rem;
                     padding: 0.375rem 0.375rem 0 0.375rem;
                     animation: 300ms ease-out blendIn forwards;
+                    cursor: pointer;
                 }
             }
         }

@@ -1,5 +1,5 @@
 <main [class.backwards]= "index % 2 == 1" [ngStyle]="{'flex-direction': index % 2 == 0 ? 'row' : 'row-reverse'}">
-    <div class="thumbnail">
+    <div class="thumbnail noselect">
         <div>
             <img src="../../../../assets/img/arrows/icon/arrow-icon.svg">
         </div>
@@ -13,7 +13,7 @@
                 <span>{{ project.tools }}</span>
                 <p>{{ project.path | translate }}</p>
             </div>
-            <div>
+            <div class="noselect">
                 @if (index == 2) {
 
                 } @else {
