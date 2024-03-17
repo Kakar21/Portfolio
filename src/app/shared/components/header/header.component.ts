@@ -13,11 +13,13 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class HeaderComponent {
   @Output() newOpenMenu = new EventEmitter<boolean>();
   @Input() menuOpen: boolean;
+  @Input() legalLink: boolean;
 
   lang = localStorage.getItem('lang') || 'en';
 
   constructor(private translateService: TranslateService) {
     this.menuOpen = false;
+    this.legalLink = false;
     console.log(this.lang);
   }
 

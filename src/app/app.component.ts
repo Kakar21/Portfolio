@@ -1,5 +1,5 @@
 import { Component, Injectable} from '@angular/core';
-import { RouterOutlet} from '@angular/router';
+import { Router, RouterOutlet} from '@angular/router';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { MenuComponent } from './shared/components/menu/menu.component';
@@ -24,10 +24,19 @@ export class AppComponent {
   title = 'portfolio';
   menuOpenValue = false;
   menuOpen = false;
+  legalLink = false;
 
-  constructor(public translate: TranslateService) {
+  constructor(public translate: TranslateService, private router: Router) {
     translate.setDefaultLang('en');
     translate.use(localStorage.getItem('lang') || 'en');
+
+    router.events.subscribe((event) => {
+      if (router.url !== '/') {
+        this.legalLink = true;
+      } else {
+        this.legalLink = false;
+      }
+    })
   }
 
   public toggelMenu($event: any): void {
