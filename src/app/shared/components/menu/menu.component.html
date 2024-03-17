@@ -5,7 +5,7 @@
             <div class="edge"></div>
         </div>
         <div [routerLink]="''" (click)="scrollToSection('my-skills')" class="section">
-            <h1>{{ "my-skills" | translate }}</h1>
+            <h1 [ngClass]="{'my-skills-de': lang === 'de'}">{{ "my-skills" | translate }}</h1>
             <div class="edge"></div>
         </div>
         <div [routerLink]="''" (click)="scrollToSection('portfolio')" class="section">
@@ -15,7 +15,7 @@
     </div>
     <footer [ngClass]="menuOpen ? null : 'hideAni150'">
         <div>
-            <h2>Say Hi!</h2>
+            <h2>{{ "say-hi" | translate }}</h2>
             <div>
                 <div>
                     <span>ghulammustafa&#64;kakar.dev</span>

@@ -2,7 +2,7 @@ import { NgClass } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import {Clipboard} from '@angular/cdk/clipboard';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-menu',
@@ -16,10 +16,15 @@ export class MenuComponent {
   @Output() newOpenMenu = new EventEmitter<boolean>();
   @Input() menuOpen: boolean;
   copied: boolean;
+  lang: string;
 
-  constructor(private clipboard: Clipboard) {
+  constructor(private clipboard: Clipboard, public translate: TranslateService) {
     this.menuOpen = false;
     this.copied = false;
+    this.lang = '';
+    translate.onLangChange.subscribe((event) => {
+      this.lang = event.lang;
+    });
   }
 
   public openMenu(value: boolean) {
