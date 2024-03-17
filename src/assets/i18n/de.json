@@ -27,5 +27,6 @@
     "checkbox-2": "gelesen und stimme der Verarbeitung meiner Daten zu.",
     "send": "Abschicken",
     "footer-html-1": "<a href=\"./datenschutzerklaerung\" target=\"_blank\">Datenschutzerklärung</a><div></div>",
-    "footer-html-2": "<a href=\"./impressum\" target=\"_blank\">Impressum</a><div></div>"
+    "footer-html-2": "<a href=\"./impressum\" target=\"_blank\">Impressum</a><div></div>",
+    "thanks": "Vielen Dank"
 }

@@ -11,15 +11,7 @@
             <div>
                 <h3>{{ project.name }}</h3>
                 <span>{{ project.tools }}</span>
-                @if(project.path === 'join') {
-                    <p>{{ "join" | translate }}</p>
-                } @else if (project.path === 'sharkie') {
-                    <p>{{ "sharkie" | translate }}</p>
-                } @else if (project.path === 'portfolio') {
-                    <p>{{ "portfolio" | translate }}</p>
-                } @else if (project.path === 'simple-crm') {
-                    <p>{{ "simple-crm" | translate }}</p>
-                }
+                <p>{{ project.path | translate }}</p>
             </div>
             <div>
                 @if (index == 2) {

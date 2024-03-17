@@ -24,12 +24,12 @@ button {
     background-color: transparent;
     transition: 100ms ease-in-out;
 
-    &:not(.disabled):hover {
+    &:not(.disabled, :disabled):hover {
         font-weight: 700 !important;
         padding: calc(1.25rem - 4px) calc(5rem - 4px) !important;
     }
 
-    &:not(.disabled):active {
+    &:not(.disabled, :disabled):active {
         color: $cream !important;
         font-weight: 400 !important;
         background: $black !important;
@@ -94,4 +94,40 @@ body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.link {
+    display: inline-flex;
+    padding: 0.3125rem 0.625rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.1875rem;
+
+    >a {
+        line-height: 120%;
+        transition: 100ms ease-in;
+    }
+
+    >div {
+        transition: transform 100ms ease-in, opacity 100ms ease-out;
+        width: 3.46875rem;
+        height: 0;
+        border: 1px solid $orange;
+        margin-top: -2px;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    &:hover {
+        align-items: flex-end;
+
+        >a {
+            font-weight: 700;
+        }
+
+        >div {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 }

@@ -20,6 +20,7 @@ export class ContactComponent {
     message: "",
     privacyPolicy: false
   };
+  mailSent = false;
 
   mailTest = true;
 
@@ -39,7 +40,11 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            // TODO: add send email success message
+            // For success feedback
+            this.mailSent = true;
+            setTimeout(() => {
+              this.mailSent = false;
+            }, 5000);
             ngForm.resetForm();
           },
           error: (error) => {
@@ -49,6 +54,10 @@ export class ContactComponent {
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       // For success testing
+      this.mailSent = true;
+      setTimeout(() => {
+        this.mailSent = false;
+      }, 5000);
       ngForm.resetForm();
     }
   }

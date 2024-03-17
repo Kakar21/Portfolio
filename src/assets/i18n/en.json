@@ -22,10 +22,11 @@
     "message": "Your message",
     "message-required": "Your message is empty",
     "checkbox-1": "I've read the",
-    "privacy-policy": "Privacy policy",
+    "privacy-policy": "privacy policy",
     "privacy-policy-required": "Please accept the privacy policy",
     "checkbox-2": "and agree to the processing of my data as outlined.",
     "send": "Send message",
     "footer-html-1": "<a href=\"./privacy-policy\" target=\"_blank\">Privacy policy</a><div></div>",
-    "footer-html-2": "<a href=\"./legal-notice\" target=\"_blank\">Legal notice</a><div></div>"
+    "footer-html-2": "<a href=\"./legal-notice\" target=\"_blank\">Legal notice</a><div></div>",
+    "thanks": "Thank you"
 }

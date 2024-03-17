@@ -57,15 +57,16 @@
 
             <div class="privacy-policy-c">
                 <label for="privacy-policy"><input id="checkbox" #privacyPolicy="ngModel" [(ngModel)]="contactData.privacyPolicy"
-                        type="checkbox" id="privacyPolicy" name="privacyPolicy" required>{{ "checkbox-1" | translate }} <a
-                        href="./privacy-policy" target="_blank">{{ "privacy-policy" | translate }}</a> {{ "checkbox-2" | translate }}</label>
+                        type="checkbox" id="privacyPolicy" name="privacyPolicy" required>{{ "checkbox-1" | translate }}<a
+                        href="./privacy-policy" target="_blank" name="{{'privacy-policy' | translate}}" >{{ "privacy-policy" | translate }}</a> {{ "checkbox-2" | translate }}</label>
                 @if (!contactData.privacyPolicy && (contactForm.submitted || privacyPolicy.touched)) {
                 <span class="error">{{ "privacy-policy-required" | translate }}</span>
                 }
             </div>
-            <!-- TODO: Fix hover shift -->
 
-            @if (contactForm.valid) {
+            @if (mailSent) {
+            <button type="submit" value="Submit" disabled>{{ "thanks" | translate }}<img src="../../../assets/img/symbols/success-green.svg"></button>
+            } @else if (contactForm.valid) {
             <button type="submit" value="Submit">{{ "send" | translate }}</button>
             } @else {
             <button type="submit" value="Submit" class="disabled">{{ "send" | translate }}</button>
