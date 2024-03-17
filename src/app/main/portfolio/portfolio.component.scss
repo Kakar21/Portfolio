@@ -6,6 +6,7 @@ main {
     align-items: center;
     padding: 0 6.5rem 0 6.06rem;
     gap: 2.19rem;
+
     >div {
         margin-top: 4.93rem;
         display: flex;
@@ -27,4 +28,22 @@ p {
     width: 32.8125rem;
     font-size: 1.4375rem;
     line-height: 120%;
+}
+
+@media (min-width: 390px) and (max-width: 1440px) {
+    main {
+        padding: 0 1.1875rem 0 1.5625rem;
+        >div {
+            padding-right: 0.375rem;
+        }
+    }
+
+    h2 {
+        font-size: 2.8125rem;
+        letter-spacing: 0.02813rem;
+    }
+
+    p {
+        width: 100%;
+    }
 }
