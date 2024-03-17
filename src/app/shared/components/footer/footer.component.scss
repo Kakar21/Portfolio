@@ -71,3 +71,10 @@ main {
         }
     }
 }
+
+@media (min-width: 390px) and (max-width: 1440px) {
+    main {
+        width: 100%;
+        padding: 1.875rem 1.5625rem;
+    }
+}

@@ -22,6 +22,28 @@ main {
     }
 
     100% {
-        margin: 4.0625rem 4.08581rem 0 0 ;
+        margin: 4.0625rem 4.08581rem 0 0;
+    }
+}
+
+@keyframes pointOutMobile {
+    0% {
+        margin: 0;
+    }
+
+    100% {
+        margin: 4.23644rem 4.2435rem 0 0;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 1440px) {
+    main {
+        width: 15.625rem;
+        height: 15.625rem;
+
+        >img {
+            height: 11.38856rem;
+            width: 11.3815rem;
+        }
     }
 }

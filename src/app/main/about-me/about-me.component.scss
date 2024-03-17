@@ -72,3 +72,45 @@ img {
         }
     }
 }
+
+@media (min-width: 390px) and (max-width: 1440px) {
+
+    main {
+        padding: 0 1.65625rem 0 1.46875rem;
+        gap: 2.1875rem;
+        justify-content: space-between;
+
+        >div {
+            flex: 1;
+            flex-direction: column;
+            gap: unset;
+            justify-content: space-between;
+        }
+    }
+    
+    button {
+        display: none;
+    }
+
+    h2 {
+        font-size: 2.8125rem;
+        letter-spacing: 0.02813rem;
+        padding-bottom: 0.5625rem;
+    }
+
+    img {
+        width: 21.02362rem;
+        height: 21.02362rem;
+
+    }
+
+    .portrait {
+        width: 21.8125rem;
+        height: 21.8125rem;
+
+        >div {
+            width: calc(21.02362rem - 8px);
+            height: calc(21.02362rem - 8px);
+        }
+    }
+}

@@ -49,7 +49,7 @@ h2 {
         >img {
             height: 4.6875rem;
             transition: 100ms ease-in-out;
-            filter: invert(71%) sepia(89%) saturate(3345%) hue-rotate(357deg) brightness(0) contrast(110%);            
+            filter: invert(71%) sepia(89%) saturate(3345%) hue-rotate(357deg) brightness(0) contrast(110%);
 
         }
     }
@@ -67,10 +67,10 @@ h2 {
 
             >img {
                 animation: 500ms spin 100ms ease-in-out;
-                filter: invert(71%) sepia(89%) saturate(3345%) hue-rotate(357deg) brightness(103%) contrast(110%);   
+                filter: invert(71%) sepia(89%) saturate(3345%) hue-rotate(357deg) brightness(103%) contrast(110%);
             }
         }
-        
+
         >h6 {
             color: $orange;
         }
@@ -106,5 +106,22 @@ h2 {
     100% {
         height: 4.6875rem;
         transform: translateX(0);
+    }
+}
+
+@media (min-width: 390px) and (max-width: 1440px) {
+    main {
+        padding: 0 1.5625rem;
+
+        >div {
+            row-gap: 1.9375rem;
+            column-gap: 1.580625rem;
+            padding: calc(4rem - 4px) calc(1.018125rem - 4px) calc(1.625rem - 4px) calc(1rem - 4px);
+        }
+    }
+
+    h2 {
+        font-size: 2.8125rem;
+        letter-spacing: 0.02813rem;
     }
 }
