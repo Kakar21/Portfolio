@@ -12,3 +12,13 @@ ol {
     font-weight: 700;
     line-height: 120%;
 }
+
+@media (min-width: 390px) and (max-width: 1440px) {
+    main {
+        padding-left: 2.5rem;
+    }
+
+    ::marker {
+        font-size: 1.5rem;
+    }
+}

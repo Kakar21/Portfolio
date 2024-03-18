@@ -28,5 +28,6 @@
     "send": "Send message",
     "footer-html-1": "<a href=\"./privacy-policy\" target=\"_blank\">Privacy policy</a><div></div>",
     "footer-html-2": "<a href=\"./legal-notice\" target=\"_blank\">Legal notice</a><div></div>",
-    "thanks": "Thank you"
+    "thanks": "Thank you",
+    "privacy-policy-link": "./privacy-policy"
 }

@@ -1,3 +1,9 @@
 @import "../../styles.scss";
 @import "../../app/legal-notice/legal-notice.component.scss";
 @import "../../app/privacy-policy/privacy-policy.component.scss";
+
+@media (min-width: 390px) and (max-width: 1440px) {
+    h2 {
+        word-break: break-all;
+    }
+}
