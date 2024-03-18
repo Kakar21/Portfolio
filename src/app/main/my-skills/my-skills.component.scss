@@ -124,6 +124,10 @@ h2 {
     h2 {
         font-size: 2.8125rem;
         letter-spacing: 0.02813rem;
+        width: max-content;
+        height: unset;
+        padding: 0 0.4375rem;
+        margin-bottom: -1.40625rem;
     }
 
     .skill {

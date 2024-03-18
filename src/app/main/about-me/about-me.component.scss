@@ -76,11 +76,13 @@ img {
 @media (min-width: 390px) and (max-width: 1440px) {
 
     main {
-        padding: 0 1.65625rem 0 1.46875rem;
+        padding: 0 1.1375rem 0 0.875rem;
         gap: 2.1875rem;
         justify-content: space-between;
 
         >div {
+            padding: 0 0.5125rem 0 0.59375rem;
+            margin-bottom: 5vh;
             flex: 1;
             flex-direction: column;
             gap: unset;

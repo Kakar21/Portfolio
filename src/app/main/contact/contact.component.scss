@@ -306,19 +306,60 @@ form {
 
 @media (min-width: 390px) and (max-width: 1440px) {
     main {
-        padding: 0 1.3125rem;
+        padding: 0 1.3125rem 0 1.5625rem;
+        gap: 2.1875rem;
+
+        >div:not(.scroll-up) {
+            gap: 1.1875rem;
+            >p, >h6 {
+                text-align: center;
+            }
+            // TODO: fix bug project test button is opening under this h6
+        }
     }
-    
+
     h2 {
         font-size: 2.8125rem;
         letter-spacing: 0.02813rem;
     }
 
     form {
+        margin-top: 1rem;
+
         >.field input,
         .field textarea {
             width: calc(18.125rem - 8px);
             padding: 0.9375rem 1.5625rem;
         }
+
+        >button {
+            padding: calc(1.25rem - 4px) calc(2.5rem - 4px);
+            margin-top: 0.5rem;
+        }
+
+        >div:not(.field) {
+            padding-left: 0.25rem;
+            >label {
+                display: block;
+                padding-left: 2rem;
+                >a {
+                    vertical-align: bottom;
+                }
+            }
+        }
+    }
+
+    .privacy-policy-c {
+        >span {
+            font-size: 0.75rem;
+        }
+    }
+
+    .error {
+        font-size: 1rem;
+    }
+
+    .scroll-up {
+        display: none;
     }
 }

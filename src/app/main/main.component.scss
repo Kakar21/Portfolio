@@ -36,3 +36,24 @@
 app-portfolio {
     scroll-margin-top: 5.75rem;
 }
+
+@media (min-width: 390px) and (max-width: 1440px) {
+
+    #first-arrow,
+    #second-arrow,
+    #third-arrow {
+        margin: 0;
+    }
+
+    #first-arrow {
+        margin-left: 2.375rem !important;
+    }
+
+    #second-arrow {
+        margin-left: 5.9375rem !important;
+    }
+
+    #third-arrow {
+        margin-left: 2.125rem !important;
+    }
+}
