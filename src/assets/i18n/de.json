@@ -29,5 +29,6 @@
     "footer-html-1": "<a href=\"./datenschutzerklaerung\" target=\"_blank\">Datenschutzerklärung</a><div></div>",
     "footer-html-2": "<a href=\"./impressum\" target=\"_blank\">Impressum</a><div></div>",
     "thanks": "Vielen Dank",
-    "privacy-policy-link": "./datenschutzerklaerung"
+    "privacy-policy-link": "./datenschutzerklaerung",
+    "send-a-message": "Nachricht senden"
 }

@@ -1,5 +1,5 @@
 <main>
-    <h2>{{ "my-skills" | translate }}</h2>
+    <h2 [ngClass]="{'my-skills-de': lang === 'de'}">{{ "my-skills" | translate }}</h2>
     <div>
         <div class="skill" *ngFor="let skill of skills">
             <div class="noselect">

@@ -256,6 +256,11 @@ footer {
             font-size: 2.8125rem;
             letter-spacing: -0.07031rem;
         }
+
+        .edge {
+            width: calc(1.16769rem - 4px);
+            height: calc(1.55688rem - 4px);
+        }
     }
 
     .my-skills-de {
@@ -272,10 +277,12 @@ footer {
             height: 45%;
             justify-content: space-between;
             padding: 0 1.25rem 3.625rem 1.5625rem;
+
             >h2 {
                 font-size: 2.8125rem;
                 letter-spacing: 0.02813rem;
             }
+
             >div {
                 flex: 1;
                 flex-direction: column;

@@ -312,7 +312,7 @@ main {
         }
 
         .description {
-            transform: translateY(38.6875rem);
+            transform: translateY(-17rem);
             align-items: flex-end;
 
             >div:first-child {
@@ -329,6 +329,8 @@ main {
         width: 100%;
         gap: 1.875rem;
         margin-bottom: 0;
+        transform: translateY(-17rem);
+        transition: transform 150ms ease-out, opacity 100ms ease-out;
 
         >div:first-child {
             >h3 {

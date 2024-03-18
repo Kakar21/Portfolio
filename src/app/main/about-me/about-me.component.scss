@@ -82,7 +82,7 @@ img {
 
         >div {
             padding: 0 0.5125rem 0 0.59375rem;
-            margin-bottom: 5vh;
+            margin-bottom: 10vh;
             flex: 1;
             flex-direction: column;
             gap: unset;
@@ -93,11 +93,17 @@ img {
     button {
         display: none;
     }
+    
+    p {
+        padding-bottom: 0.5625rem;
+    }
 
     h2 {
         font-size: 2.8125rem;
         letter-spacing: 0.02813rem;
         padding-bottom: 0.5625rem;
+        white-space: nowrap;
+        align-self: center;
     }
 
     img {

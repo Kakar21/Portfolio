@@ -1,15 +1,16 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgClass } from '@angular/common';
 import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-my-skills',
   standalone: true,
-  imports: [ CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, NgClass],
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent {
+  lang: string;
   skills = [
     {
       path: 'angular',
@@ -52,4 +53,11 @@ export class MySkillsComponent {
       name: 'Material Design'
     },
   ];
+
+  constructor(public translate: TranslateService) {
+    this.lang = '';
+    translate.onLangChange.subscribe((event) => {
+      this.lang = event.lang;
+    });
+  }
 }

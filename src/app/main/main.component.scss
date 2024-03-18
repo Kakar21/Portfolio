@@ -39,6 +39,18 @@ app-portfolio {
 
 @media (min-width: 390px) and (max-width: 1440px) {
 
+    app-about-me {
+        scroll-margin-top: 5.5rem;
+    }
+
+    app-contact {
+        scroll-margin-top: -2.5rem;
+    }
+
+    app-my-skills {
+        scroll-margin-top: 5.5rem;
+    }
+
     #first-arrow,
     #second-arrow,
     #third-arrow {
@@ -47,6 +59,7 @@ app-portfolio {
 
     #first-arrow {
         margin-left: 2.375rem !important;
+        margin-top: -10vh;
     }
 
     #second-arrow {
@@ -55,5 +68,6 @@ app-portfolio {
 
     #third-arrow {
         margin-left: 2.125rem !important;
+        margin-bottom: -4rem !important;
     }
 }
