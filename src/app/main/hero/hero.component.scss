@@ -62,7 +62,7 @@ button {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: calc(90rem - 6.3125rem - 6.25rem);
+    width: calc(100% - 6.3125rem - 6.25rem);
     margin: 0 6.3125rem 0 6.25rem;
 
     >div:first-child {
