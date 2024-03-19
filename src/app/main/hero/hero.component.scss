@@ -131,7 +131,7 @@ button {
     }
 }
 
-@media (min-width: 390px) and (max-width: 874px) {
+@media (min-width: 390px) and (max-width: 875px) {
 
     main {
 
@@ -187,6 +187,102 @@ button {
 
     .other:last-child {
         margin-right: -0.375rem;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 875px) {
+    .job-title {
+        font-size: calc(2.8125rem * 2);
+        width: unset !important;
+        height: unset !important;
+    }
+
+    .line {
+        width: calc(5.5rem * 3.5);
+    }
+
+    .name {
+        font-size: 2.0625rem;
+    }
+
+    main {
+        >div:not(.other) {
+            >div {
+                margin-top: calc(1.4035087719rem / 2);
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+    .job-title {
+        font-size: calc(2.8125rem * 1.75);
+        width: unset !important;
+        height: unset !important;
+    }
+
+    .line {
+        width: calc(5.5rem * 3);
+    }
+
+    .name {
+        font-size: calc(2.0625rem * 0.85) ;
+    }
+
+    main {
+        >div:not(.other) {
+            >div {
+                margin-top: calc(1.4035087719rem / 2);
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+    .job-title {
+        font-size: calc(2.8125rem * 1.5);
+        width: unset !important;
+        height: unset !important;
+    }
+
+    .line {
+        width: calc(5.5rem * 2.5);
+    }
+
+    .name {
+        font-size: calc(2.0625rem * 0.75) ;
+    }
+
+    main {
+        >div:not(.other) {
+            >div {
+                margin-top: calc(1.4035087719rem / 2);
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+    .job-title {
+        font-size: calc(2.8125rem * 1.25);
+        width: unset !important;
+        height: unset !important;
+    }
+
+    .line {
+        width: calc(5.5rem * 2);
+    }
+
+    .name {
+        font-size: calc(2.0625rem * 0.65) ;
+    }
+
+    main {
+        >div:not(.other) {
+            >div {
+                margin-top: calc(1.4035087719rem / 2);
+            }
+        }
     }
 }
 

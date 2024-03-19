@@ -73,7 +73,7 @@ img {
     }
 }
 
-@media (min-width: 390px) and (max-width: 874px) {
+@media (min-width: 390px) and (max-width: 875px) {
 
     main {
         padding: 0 1.1375rem 0 0.875rem;
@@ -82,7 +82,7 @@ img {
 
         >div {
             padding: 0 0.5125rem 0 0.59375rem;
-            margin-bottom: 10vh;
+            margin-bottom: calc(10vh + 5.75rem);
             flex: 1;
             flex-direction: column;
             gap: unset;

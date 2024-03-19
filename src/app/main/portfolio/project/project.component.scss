@@ -243,7 +243,7 @@ main {
     }
 }
 
-@media (min-width: 390px) and (max-width: 874px) {
+@media (min-width: 390px) and (max-width: 875px) {
     main {
         width: 100%;
         height: auto;
@@ -374,6 +374,34 @@ main {
                 height: 1.5rem;
                 margin-right: calc(-0.75rem - 2px);
             }
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 875px) {
+    .thumbnail {
+        >img {
+            width: calc(19.75rem * 1.5);
+            height: calc(12.5rem * 1.5);
+        }
+
+        >div {
+            width: calc((19.75rem * 1.5) - 8px);
+            height: calc((12.5rem * 1.5) - 8px);
+        }
+    }
+}
+
+@media (min-width: 475px) and (max-width: 600px) {
+    .thumbnail {
+        >img {
+            width: calc(19.75rem * 1.25);
+            height: calc(12.5rem * 1.25);
+        }
+
+        >div {
+            width: calc((19.75rem * 1.25) - 8px);
+            height: calc((12.5rem * 1.25) - 8px);
         }
     }
 }
