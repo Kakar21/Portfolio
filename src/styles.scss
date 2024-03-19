@@ -153,16 +153,46 @@ body {
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 874px) {
 
     body {
         width: 100%;
     }
 
     button {
-    
+
         &:not(.disabled, :disabled):hover {
             padding: calc(1.25rem - 4px) calc(3.75rem - 4px) !important;
         }
+    }
+}
+
+@media (min-width: 1305.0235px) and (max-width: 1376.98px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1228.136px) and (max-width: 1305.0235px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1148.311px) and (max-width: 1228.136px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1067.5485px) and (max-width: 1148.311px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 875px) and (max-width: 1067.5485px) {
+    :root {
+        font-size: 11px;
     }
 }

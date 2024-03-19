@@ -52,7 +52,7 @@ app-portfolio {
     scroll-margin-top: 5.75rem;
 }
 
-@media (min-width: 390px) and (max-width: 1440px) {
+@media (min-width: 390px) and (max-width: 874px) {
 
     app-about-me {
         scroll-margin-top: 5.5rem;
@@ -97,5 +97,11 @@ app-portfolio {
         ::ng-deep main h2 {
             color: $orange !important;
         }
+    }
+}
+
+@media (min-width: 875px) and (max-width: 1440px) {
+    :host {
+        width: 100%;
     }
 }

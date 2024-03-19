@@ -73,7 +73,7 @@ img {
     }
 }
 
-@media (min-width: 390px) and (max-width: 1440px) {
+@media (min-width: 390px) and (max-width: 874px) {
 
     main {
         padding: 0 1.1375rem 0 0.875rem;
@@ -129,5 +129,11 @@ img {
     >div {
         margin: 1.25rem 0 0 1.25rem;
         opacity: 1;
+    }
+}
+
+@media (min-width: 875px) and (max-width: 1000px) {
+    main {
+        padding: 0 calc(6.31rem / 2) 0 calc(6.25rem / 2);
     }
 }
