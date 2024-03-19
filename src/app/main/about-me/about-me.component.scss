@@ -87,6 +87,7 @@ img {
             flex-direction: column;
             gap: unset;
             justify-content: space-between;
+            align-items: center;
         }
     }
     
@@ -95,6 +96,7 @@ img {
     }
     
     p {
+        align-self: flex-start;
         padding-bottom: 0.5625rem;
     }
 

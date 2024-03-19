@@ -110,9 +110,8 @@ main {
 
 @media (min-width: 390px) and (max-width: 1440px) {
     main {
-        width: 21.25rem;
+        width: calc(100% - 1.5625rem - 1.5625rem);
         padding: 1.875rem 1.5625rem;
     }
 
-    // TODO: translation switch in the mid?
 }

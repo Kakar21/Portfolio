@@ -314,7 +314,6 @@ form {
             >p, >h6 {
                 text-align: center;
             }
-            // TODO: fix bug project test button is opening under this h6
         }
     }
 
@@ -323,12 +322,17 @@ form {
         letter-spacing: 0.02813rem;
     }
 
+    .field {
+        width: 100%;
+    }
+
     form {
         margin-top: 1rem;
+        width: 100%;
 
         >.field input,
         .field textarea {
-            width: calc(18.125rem - 8px);
+            width: calc(100% - 1.5625rem - 1.5625rem - 8px);
             padding: 0.9375rem 1.5625rem;
         }
 

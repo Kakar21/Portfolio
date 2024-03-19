@@ -58,16 +58,16 @@ app-portfolio {
     }
 
     #first-arrow {
-        margin-left: 2.375rem !important;
+        margin-left: calc(50vw - 1rem) !important;
         margin-top: -10vh;
     }
 
     #second-arrow {
-        margin-left: 5.9375rem !important;
+        margin-left: calc(50vw - 15rem) !important;
     }
 
     #third-arrow {
-        margin-left: 2.125rem !important;
+        margin-left: calc(50vw - 1rem) !important;
         margin-bottom: -4rem !important;
     }
 }

@@ -245,7 +245,7 @@ main {
 
 @media (min-width: 390px) and (max-width: 1440px) {
     main {
-        width: 21.25rem;
+        width: 100%;
         height: auto;
         align-items: flex-start;
         justify-content: flex-start;
@@ -286,6 +286,7 @@ main {
     }
 
     .backwards {
+        width: 100%;
         flex-direction: column;
 
         &:hover {
@@ -305,7 +306,7 @@ main {
         }
 
         .thumbnail {
-            align-self: flex-end;
+            align-self: center;
 
             >div {
                 >img {
@@ -357,6 +358,8 @@ main {
     }
 
     .thumbnail {
+        align-self: center;
+
         >img {
             width: 19.75rem;
             height: 12.5rem;
