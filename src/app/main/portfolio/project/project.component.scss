@@ -123,6 +123,11 @@ main {
 
     .description {
         transform: translateX(38.6875rem);
+        >div {
+            >span {
+                text-align: right;
+            }
+        }
     }
 
     &:hover {
