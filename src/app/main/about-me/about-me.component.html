@@ -8,7 +8,7 @@
             </p>
             <button (click)="scrollToSection('contact')" class="noselect">{{ "about-me-button" | translate }}</button>
         </div>
-        <div class="portrait noselect">
+        <div [class.portraitAni]="portraitScrolled" class="portrait noselect">
             <div></div>
             <img src="../../../assets/img/portrait.jpg" alt="Portrait">
         </div>

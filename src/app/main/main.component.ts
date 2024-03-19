@@ -30,10 +30,15 @@ export class MainComponent {
     }
   }
 
-  scrolled = [{ scrolled: false }, { scrolled: false }, { scrolled: false }];
+  titlesScrolled = [{ scrolled: false }, { scrolled: false }, { scrolled: false }, { scrolled: false }];
+
+  arrowScrolled = [{ scrolled: false }, { scrolled: false }, { scrolled: false }];
 
   @HostListener("document:scroll")
-  scrollFn() {
+  arrowScrollFn() {
+    if (!window.matchMedia("(pointer: fine) and (hover: hover)").matches) {
+      this.titlesScrollFn();
+    }
     let arrows = document.querySelectorAll('app-arrow');
     let i = -1;
     arrows.forEach((arrow) => {
@@ -41,7 +46,22 @@ export class MainComponent {
       let rect = arrow.getBoundingClientRect();
       if (rect) {
         if (rect.top < (window.innerHeight / 2)) {
-          this.scrolled[i].scrolled = true;
+          this.arrowScrolled[i].scrolled = true;
+        }
+      }
+    });
+  }
+  titlesScrollFn() {
+    let titles = document.querySelectorAll('#about-me, #my-skills, #portfolio, #contact');
+    let i = -1;
+    titles.forEach((title) => {
+      i++;
+      let rect = title.getBoundingClientRect();
+      if (rect) {
+        if (rect.top < (window.innerHeight / 2)) {
+          this.titlesScrolled[i].scrolled = true;
+        } else {
+          this.titlesScrolled[i].scrolled = false;
         }
       }
     });

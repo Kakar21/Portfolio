@@ -71,3 +71,11 @@ app-portfolio {
         margin-bottom: -4rem !important;
     }
 }
+
+:host {
+    .titleAni {
+        ::ng-deep main h2 {
+            color: $orange !important;
+        }
+    }
+}

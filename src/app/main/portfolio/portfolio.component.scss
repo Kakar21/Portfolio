@@ -30,6 +30,37 @@ p {
     line-height: 120%;
 }
 
+@keyframes awakeBackwardsMobile {
+    0% {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: calc(-0.75rem - 2px);
+    }
+
+    100% {
+        transform: rotate(0);
+        width: 2.34375rem;
+        height: 2.34375rem;
+        margin-left: calc(-1.171875rem - 2px);
+    }
+}
+
+@keyframes awakeMobile {
+
+    0% {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: calc(-0.75rem - 2px);
+    }
+
+    100% {
+        transform: rotate(0);
+        width: 2.34375rem;
+        height: 2.34375rem;
+        margin-right: calc(-1.171875rem - 2px);
+    }
+}
+
 @media (min-width: 390px) and (max-width: 1440px) {
     main {
         padding: 0 1.1875rem 0 1.5625rem;
@@ -48,5 +79,47 @@ p {
 
     p {
         width: 100%;
+    }
+}
+
+:host {
+    .projectAni {
+        ::ng-deep main {
+            .thumbnail {
+                >img {
+                    filter: grayscale(0);
+                }
+    
+                >div {
+                    opacity: 1;
+                    margin: 0.75rem 0 0 0.625rem;
+    
+                    >img {
+                        animation: 150ms linear awakeMobile forwards;
+                    }
+                }
+            }
+
+            .description {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+
+
+
+
+        ::ng-deep .backwards {
+            .thumbnail {
+                >div {
+                    margin: 0.75rem 0.625rem 0 -0.625rem !important;
+    
+                    >img {
+                        animation: 150ms linear awakeBackwardsMobile forwards !important;
+                    }
+                }
+            }
+        }
     }
 }

@@ -1,8 +1,8 @@
 <app-hero id="hero"></app-hero>
-<app-about-me id="about-me"></app-about-me>
-<app-arrow id="first-arrow" [class.animation]="scrolled[0].scrolled"></app-arrow>
-<app-my-skills id="my-skills"></app-my-skills>
-<app-arrow id="second-arrow" [class.animation]="scrolled[1].scrolled"></app-arrow>
-<app-portfolio id="portfolio"></app-portfolio>
-<app-arrow id="third-arrow" [class.animation]="scrolled[2].scrolled"></app-arrow>
-<app-contact id="contact"></app-contact>
+<app-about-me id="about-me" [class.titleAni]="titlesScrolled[0].scrolled"></app-about-me>
+<app-arrow id="first-arrow" [class.animation]="arrowScrolled[0].scrolled"></app-arrow>
+<app-my-skills id="my-skills" [class.titleAni]="titlesScrolled[1].scrolled"></app-my-skills>
+<app-arrow id="second-arrow" [class.animation]="arrowScrolled[1].scrolled"></app-arrow>
+<app-portfolio id="portfolio" [class.titleAni]="titlesScrolled[2].scrolled"></app-portfolio>
+<app-arrow id="third-arrow" [class.animation]="arrowScrolled[2].scrolled"></app-arrow>
+<app-contact id="contact" [class.titleAni]="titlesScrolled[3].scrolled"></app-contact>
