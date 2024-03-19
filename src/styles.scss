@@ -160,6 +160,9 @@ body {
     }
 
     button {
-        
+    
+        &:not(.disabled, :disabled):hover {
+            padding: calc(1.25rem - 4px) calc(3.75rem - 4px) !important;
+        }
     }
 }

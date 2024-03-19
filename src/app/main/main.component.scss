@@ -7,8 +7,12 @@
     width: 90rem;
 }
 
-app-hero, app-about-me, app-my-skills, app-portfolio, app-contact {
+app-hero, app-about-me, app-my-skills, app-portfolio {
     width: 100%;
+}
+
+app-contact {
+    width: calc(100vw - var(--scrollbar-width)) ;
 }
 
 // #first-arrow {
@@ -56,6 +60,7 @@ app-portfolio {
 
     app-contact {
         scroll-margin-top: -2.5rem;
+        width: 100%;
     }
 
     app-my-skills {
@@ -80,6 +85,10 @@ app-portfolio {
     #third-arrow {
         // margin-left: calc(50vw - 1rem) !important;
         margin-bottom: -4rem !important;
+    }
+
+    :host {
+        width: 100%;
     }
 }
 
