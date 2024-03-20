@@ -52,11 +52,13 @@ app-portfolio {
     scroll-margin-top: 5.75rem;
 }
 
+app-about-me {
+    scroll-margin-top: 5.5rem;
+}
+
 @media (max-width: 875px) {
 
-    app-about-me {
-        scroll-margin-top: 5.5rem;
-    }
+
 
     app-contact {
         scroll-margin-top: -2.5rem;
@@ -74,8 +76,8 @@ app-portfolio {
     }
 
     #first-arrow {
-        // margin-left: calc(50vw - 1rem) !important;
-        margin-top: calc(-10vh - 5.75rem);
+        // // margin-left: calc(50vw - 1rem) !important;
+        // margin-top: -10vh;
     }
 
     // #second-arrow {

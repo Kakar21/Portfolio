@@ -5,7 +5,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    // height: calc(100vh - 5.75rem);
     padding: 0 6.31rem 0 6.25rem;
     // Change padding when portraits size changes
     gap: 2.75rem;
@@ -82,11 +82,11 @@ img {
 
         >div {
             padding: 0 0.5125rem 0 0.59375rem;
-            margin-bottom: calc(10vh + 5.75rem);
+            // margin-bottom: calc(10vh + 5.75rem);
             flex: 1;
             flex-direction: column;
-            gap: unset;
-            justify-content: space-between;
+            gap: 2.1875rem;
+            justify-content: space-evenly;
             align-items: center;
         }
     }
