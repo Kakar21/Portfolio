@@ -21,7 +21,6 @@ export class AboutMeComponent {
   titlesScrollFn() {
     if ((!window.matchMedia("(pointer: fine) and (hover: hover)").matches)) {
       let portrait = document.querySelectorAll('.portrait');
-      console.log(this.portraitScrolled);
       let rect = portrait[0].getBoundingClientRect();
       if (rect) {
         if (rect.bottom < window.innerHeight - 10) {

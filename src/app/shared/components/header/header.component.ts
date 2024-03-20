@@ -20,7 +20,6 @@ export class HeaderComponent {
   constructor(private translateService: TranslateService) {
     this.menuOpen = false;
     this.legalLink = false;
-    console.log(this.lang);
   }
 
   changeLang(langCode: string) {

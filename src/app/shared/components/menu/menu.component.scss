@@ -84,7 +84,6 @@ footer {
     background-image: url(../../../../assets/img/background-menu.svg);
     animation: 150ms showUp ease-in-out forwards;
     // Change for responsiveness
-    // TODO: fix background cropped right bottom because of overflow hidden (scrollbar hidden)
 
     >div {
         width: calc(100% - 6.3125rem - 6.25rem);
