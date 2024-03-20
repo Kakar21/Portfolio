@@ -63,18 +63,21 @@ h2 {
         transition: 100ms ease-in-out;
     }
 
-    &:hover {
-        >div {
+}
 
-            >img {
-                animation: 500ms spin 100ms ease-in-out;
-                filter: invert(71%) sepia(89%) saturate(3345%) hue-rotate(357deg) brightness(103%) contrast(110%);
-            }
-        }
+.skillAni {
+    pointer-events: none;
 
-        >h6 {
-            color: $orange;
+    >div {
+
+        >img {
+            animation: 500ms spin 100ms ease-in-out !important;
+            filter: invert(71%) sepia(89%) saturate(3345%) hue-rotate(357deg) brightness(103%) contrast(110%) !important;
         }
+    }
+
+    >h6 {
+        color: $orange !important;
     }
 }
 
@@ -142,6 +145,42 @@ h2 {
     }
 }
 
+@media (pointer: fine) and (hover: hover) {
+    .skill {
+        &:hover {
+            >div {
+    
+                >img {
+                    animation: 500ms spin 100ms ease-in-out;
+                    filter: invert(71%) sepia(89%) saturate(3345%) hue-rotate(357deg) brightness(103%) contrast(110%);
+                }
+            }
+    
+            >h6 {
+                color: $orange;
+            }
+        }
+    }
+}
+
+@media (pointer: fine) and (hover: hover) and (max-width: 875px) {
+    .skill {
+        &:hover {
+            >div {
+    
+                >img {
+                    animation: 500ms spinMobile 100ms ease-in-out;
+                    filter: invert(71%) sepia(89%) saturate(3345%) hue-rotate(357deg) brightness(103%) contrast(110%);
+                }
+            }
+    
+            >h6 {
+                color: $orange;
+            }
+        }
+    }
+}
+
 @media (max-width: 500px) {
     .my-skills-de {
         width: min-content;
@@ -180,14 +219,21 @@ h2 {
                 height: 3.75rem;
             }
         }
+    }
 
-        &:hover {
-            >div {
-
-                >img {
-                    animation: 500ms spinMobile 100ms ease-in-out;
-                }
+    .skillAni {
+        pointer-events: none;
+    
+        >div {
+    
+            >img {
+                animation: 500ms spinMobile 100ms ease-in-out !important;
+                filter: invert(71%) sepia(89%) saturate(3345%) hue-rotate(357deg) brightness(103%) contrast(110%) !important;
             }
+        }
+    
+        >h6 {
+            color: $orange !important;
         }
     }
 }

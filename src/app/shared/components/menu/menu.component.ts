@@ -18,6 +18,7 @@ export class MenuComponent {
   copied: boolean;
   lang: string;
 
+  
   constructor(private clipboard: Clipboard, public translate: TranslateService) {
     this.menuOpen = false;
     this.copied = false;
@@ -26,6 +27,7 @@ export class MenuComponent {
       this.lang = event.lang;
     });
   }
+
 
   public openMenu(value: boolean) {
     this.menuOpen = value;
@@ -40,6 +42,7 @@ export class MenuComponent {
     }
   }
 
+
   scrollToSection(section: string | null) {
     if (section) {
       // this.menuOpen = false;
@@ -47,6 +50,7 @@ export class MenuComponent {
       document.getElementById(section)?.scrollIntoView();
     }
   }
+
 
   copyToClipboard() {
     let mail = 'ghulammustafa@kakar.dev';

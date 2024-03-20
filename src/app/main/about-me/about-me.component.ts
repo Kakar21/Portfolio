@@ -9,6 +9,8 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
+
+
   scrollToSection(section: string | null) {
     if (section) {
       document.getElementById(section)?.scrollIntoView();
@@ -17,6 +19,7 @@ export class AboutMeComponent {
 
   portraitScrolled = false;
 
+  
   @HostListener("document:scroll")
   titlesScrollFn() {
     if ((!window.matchMedia("(pointer: fine) and (hover: hover)").matches)) {

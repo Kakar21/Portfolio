@@ -17,6 +17,7 @@ export class PortfolioComponent {
 
   projectScrolled = [{ scrolled: false }, { scrolled: false }, { scrolled: false }, { scrolled: false }];
 
+  
   @HostListener("document:scroll")
   arrowScrollFn() {
     if (!window.matchMedia("(pointer: fine) and (hover: hover)").matches) {

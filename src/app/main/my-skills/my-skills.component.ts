@@ -54,10 +54,20 @@ export class MySkillsComponent {
     },
   ];
 
+
   constructor(public translate: TranslateService) {
     this.lang = '';
     translate.onLangChange.subscribe((event) => {
       this.lang = event.lang;
     });
+  }
+
+  skillAni(id: string) {
+    if (!window.matchMedia("(pointer: fine) and (hover: hover)").matches) {
+      document.getElementById(id)?.classList.add('skillAni');
+      setTimeout(() => {
+        document.getElementById(id)?.classList.remove('skillAni');
+      }, 600);
+    }
   }
 }

@@ -24,15 +24,18 @@ import { NgStyle } from '@angular/common';
 })
 export class MainComponent {
 
+
   scrollToSection(section: string | null) {
     if (section) {
       document.getElementById(section)?.scrollIntoView();
     }
   }
 
+  
   titlesScrolled = [{ scrolled: false }, { scrolled: false }, { scrolled: false }, { scrolled: false }];
 
   arrowScrolled = [{ scrolled: false }, { scrolled: false }, { scrolled: false }];
+
 
   @HostListener("document:scroll")
   arrowScrollFn() {
@@ -51,6 +54,8 @@ export class MainComponent {
       }
     });
   }
+
+
   titlesScrollFn() {
     let titles = document.querySelectorAll('#about-me, #my-skills, #portfolio, #contact');
     let i = -1;

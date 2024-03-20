@@ -17,10 +17,12 @@ export class HeaderComponent {
 
   lang = localStorage.getItem('lang') || 'en';
 
+  
   constructor(private translateService: TranslateService) {
     this.menuOpen = false;
     this.legalLink = false;
   }
+
 
   changeLang(langCode: string) {
     this.lang = langCode;
@@ -29,11 +31,13 @@ export class HeaderComponent {
     this.translateService.use(langCode);
   }
 
+
   scrollToSection(section: string | null) {
     if (section) {
       document.getElementById(section)?.scrollIntoView();
     }
   }
+
 
   public openMenu(value: boolean) {
     this.menuOpen = value;

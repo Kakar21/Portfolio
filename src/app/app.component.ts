@@ -26,6 +26,7 @@ export class AppComponent {
   menuOpen = false;
   legalLink = false;
 
+  
   constructor(public translate: TranslateService, private router: Router) {
     translate.setDefaultLang('en');
     translate.use(localStorage.getItem('lang') || 'en');
@@ -38,6 +39,7 @@ export class AppComponent {
       }
     })
   }
+
 
   public toggelMenu($event: any): void {
     this.menuOpenValue = $event;

@@ -10,6 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class HeroComponent {
 
+  
   scrollToSection(section: string | null) {
     if (section) {
       document.getElementById(section)?.scrollIntoView();

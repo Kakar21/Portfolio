@@ -22,7 +22,7 @@ export class ContactComponent {
   };
   mailSent = false;
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://kakar.dev/sendMail.php',
@@ -34,6 +34,7 @@ export class ContactComponent {
       },
     },
   };
+
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
@@ -62,6 +63,7 @@ export class ContactComponent {
     }
   }
 
+  
   scrollToSection(section: string | null) {
     if (section) {
       document.getElementById(section)?.scrollIntoView();
