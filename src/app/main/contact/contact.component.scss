@@ -304,7 +304,7 @@ form {
     }
 }
 
-@media (min-width: 390px) and (max-width: 875px) {
+@media (max-width: 875px) {
     main {
         padding: 0 1.3125rem 0 1.5625rem;
         gap: 2.1875rem;
@@ -371,5 +371,12 @@ form {
 @media (min-width: 875px) and (max-width: 1000px) {
     main {
         padding: 0 calc(6.5rem / 2) 0.25rem calc(6.5rem / 2);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 341px) {
+    #privacyPolicy {
+        width: 21px;
+        height: 21px;
     }
 }

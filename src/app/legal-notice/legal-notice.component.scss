@@ -6,6 +6,7 @@ main {
     flex-direction: column;
     gap: 1.125rem;
     padding: 3.25rem 6.25rem 3.25rem 6.5rem;
+    min-height: calc(100vh - 11.2rem - 5.75rem - 3.25rem - 3.25rem);
 }
 
 h2 {
@@ -30,7 +31,7 @@ span {
     /* 2.4rem */
 }
 
-@media (min-width: 390px) and (max-width: 1440px) {
+@media (max-width: 875px) {
     main {
         padding: 2.375rem 1.25rem 2.375rem 1.5625rem;
     }

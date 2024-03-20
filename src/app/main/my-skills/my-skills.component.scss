@@ -142,14 +142,14 @@ h2 {
     }
 }
 
-@media (min-width: 390px) and (max-width: 500px) {
+@media (max-width: 500px) {
     .my-skills-de {
         width: min-content;
         margin-bottom: -2.5rem;
     }
 }
 
-@media (min-width: 390px) and (max-width: 875px) {
+@media (max-width: 875px) {
     main {
         padding: 0 1.5625rem;
         height: unset;

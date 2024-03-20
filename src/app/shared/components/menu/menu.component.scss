@@ -239,7 +239,7 @@ footer {
     }
 }
 
-@media (min-width: 390px) and (max-width: 875px) {
+@media (max-width: 875px) {
 
     main {
         >div {
@@ -303,6 +303,10 @@ footer {
         >h1 {
             font-size: calc(2.8125rem * 1.5);
         }
+
+        .my-skills-de {
+            font-size: calc(2.578125rem * 1.5)  !important;
+        }
     }
 }
 
@@ -313,6 +317,10 @@ footer {
 
         >h1 {
             font-size: calc(2.8125rem * 1.25);
+        }
+
+        .my-skills-de {
+            font-size: calc(2.578125rem * 1.25)  !important;
         }
     }
 }

@@ -73,7 +73,7 @@ img {
     }
 }
 
-@media (min-width: 390px) and (max-width: 875px) {
+@media (max-width: 875px) {
 
     main {
         padding: 0 1.1375rem 0 0.875rem;
@@ -135,5 +135,19 @@ img {
 @media (min-width: 875px) and (max-width: 1000px) {
     main {
         padding: 0 calc(6.31rem / 2) 0 calc(6.25rem / 2);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 390px) {
+    .portrait {
+        >div {
+            width: calc(20rem - 8px);
+            height: calc(20rem - 8px);
+        }
+    }
+
+    img {
+        width: 20rem;
+        height: 20rem;
     }
 }

@@ -196,3 +196,21 @@ body {
         font-size: 11px;
     }
 }
+
+@media (min-width: 365px) and (max-width: 390px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 365px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 341px) {
+    :root {
+        font-size: 13px;
+    }
+}

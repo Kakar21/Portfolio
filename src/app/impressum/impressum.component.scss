@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 @import "../../app/legal-notice/legal-notice.component.scss";
 
-@media (min-width: 390px) and (max-width: 1440px) {
+@media (max-width: 875px) {
     h2 {
 
         align-self: center;
