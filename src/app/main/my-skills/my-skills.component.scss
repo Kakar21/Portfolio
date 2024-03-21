@@ -35,7 +35,6 @@ h2 {
     z-index: 1;
 }
 
-
 .skill {
     display: flex;
     width: 6.25rem;
@@ -161,6 +160,38 @@ h2 {
             }
         }
     }
+
+    @keyframes spin {
+        0% {
+            height: 4.6875rem;
+            transform: translateX(0)
+        }
+    
+        20% {
+            height: 4.6875rem;
+            transform: translateX(50%);
+        }
+    
+        40% {
+            height: 3.625rem;
+            transform: translateX(92%);
+        }
+    
+        60% {
+            height: 3.625rem;
+            transform: translateX(-92%);
+        }
+    
+        80% {
+            height: 4.6875rem;
+            transform: translateX(-50%);
+        }
+    
+        100% {
+            height: 4.6875rem;
+            transform: translateX(0);
+        }
+    }
 }
 
 @media (pointer: fine) and (hover: hover) and (max-width: 875px) {
@@ -177,6 +208,38 @@ h2 {
             >h6 {
                 color: $orange;
             }
+        }
+    }
+
+    @keyframes spinMobile {
+        0% {
+            height: 3.75rem;
+            transform: translateX(0)
+        }
+    
+        20% {
+            height: 3.75rem;
+            transform: translateX(50%);
+        }
+    
+        40% {
+            height: 2.75rem;
+            transform: translateX(92%);
+        }
+    
+        60% {
+            height: 2.75rem;
+            transform: translateX(-92%);
+        }
+    
+        80% {
+            height: 3.75rem;
+            transform: translateX(-50%);
+        }
+    
+        100% {
+            height: 3.75rem;
+            transform: translateX(0);
         }
     }
 }
@@ -234,6 +297,38 @@ h2 {
     
         >h6 {
             color: $orange !important;
+        }
+    }
+
+    @keyframes spinMobile {
+        0% {
+            height: 3.75rem;
+            transform: translateX(0)
+        }
+    
+        20% {
+            height: 3.75rem;
+            transform: translateX(50%);
+        }
+    
+        40% {
+            height: 2.75rem;
+            transform: translateX(92%);
+        }
+    
+        60% {
+            height: 2.75rem;
+            transform: translateX(-92%);
+        }
+    
+        80% {
+            height: 3.75rem;
+            transform: translateX(-50%);
+        }
+    
+        100% {
+            height: 3.75rem;
+            transform: translateX(0);
         }
     }
 }
