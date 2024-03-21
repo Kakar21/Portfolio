@@ -211,6 +211,7 @@ form {
     display: inline-block;
     position: absolute;
     background-image: url(../../../assets/img/symbols/unchecked.svg);
+    background-size: cover;
     width: 1.5rem;
     height: 1.5rem;
     left: 0;
@@ -306,7 +307,7 @@ form {
 
 @media (max-width: 875px) {
     main {
-        padding: 0 1.3125rem 0 1.5625rem;
+        padding: 0 1.3125rem 0.25rem 1.3125rem;
         gap: 2.1875rem;
 
         >div:not(.scroll-up) {
@@ -374,9 +375,9 @@ form {
     }
 }
 
-@media (min-width: 320px) and (max-width: 341px) {
-    #privacyPolicy {
-        width: 21px;
-        height: 21px;
-    }
-}
+// @media (min-width: 320px) and (max-width: 341px) {
+//     #privacyPolicy {
+//         width: 21px;
+//         height: 21px;
+//     }
+// }

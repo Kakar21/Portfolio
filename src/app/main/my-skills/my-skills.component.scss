@@ -6,11 +6,11 @@ main {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    padding: 0 6.31rem 0 6.25rem;
+    padding: 0 6.25rem;
 
     >div {
         display: inline-flex;
-        padding: calc(10.0625rem - 4px) calc(5.375rem - 4px) calc(8.34rem - 4px) calc(8.8125rem - 4px);
+        padding: calc(10.0625rem - 4px) calc(5.375rem - 4px) calc(8.34rem - 4px) calc(5.375rem - 4px);
         justify-content: space-between;
         align-items: center;
         justify-content: center;
@@ -259,7 +259,7 @@ h2 {
         >div {
             row-gap: 1.9375rem;
             column-gap: 1.580625rem;
-            padding: calc(4rem - 4px) calc(1.018125rem - 4px) calc(1.625rem - 4px) calc(1rem - 4px);
+            padding: calc(4rem - 4px) calc(1.018125rem - 4px) calc(1.018125rem - 4px) calc(1rem - 4px);
         }
     }
 
@@ -335,6 +335,6 @@ h2 {
 
 @media (min-width: 875px) and (max-width: 1000px) {
     main {
-        padding: 0 calc(6.31rem / 2) 0 calc(6.25rem / 2);
+        padding: 0 calc(6.25rem / 2);
     }
 }
