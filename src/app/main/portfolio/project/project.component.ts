@@ -15,7 +15,6 @@ export class ProjectComponent {
     path: '',
     number: '',
     tools: '',
-    description: '',
     link: '',
     github: ''
   }; 

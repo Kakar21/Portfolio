@@ -8,10 +8,10 @@
     "about-me-button": "Let’s talk",
     "my-skills": "My skills",
     "portfolio-p": "Explore a selection of my work here - Interact with projects to see my skills in action.",
-    "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "join": "A task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "sharkie": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
     "portfolio": "This website is my personal showcase as a Front-End Developer. It presents my skills and projects elegantly to impress potential employers.",
-    "simple-crm": "A very Simple Customer Relationship Management system working with CRUD functionality. [COMING SOON]",
+    "dabubble": "A user-friendly Slack clone app enabling easy team communication and collaboration through organized chats and channels.",
     "say-hi": "Say Hi!",
     "contact-h6": "Want to discuss a project?",
     "contact-p": "Say hello! Let's discuss your ideas and make it happen.",
@@ -30,5 +30,6 @@
     "footer-html-2": "<a href=\"./legal-notice\" target=\"_blank\">Legal notice</a><div></div>",
     "thanks": "Thank you",
     "privacy-policy-link": "./privacy-policy",
-    "send-a-message": "Send a message"
+    "send-a-message": "Send a message",
+    "coming-soon": "SOON..."
 }

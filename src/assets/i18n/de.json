@@ -11,7 +11,7 @@
     "join": "Ein Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktion & weise Benutzer und Kategorien hinzu.",
     "sharkie": "Ein Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.",
     "portfolio": "Diese Website ist meine Visitenkarte als Front-End-Entwickler. Sie präsentiert meine Fähigkeiten und Projekte elegant, um potenzielle Arbeitgeber zu beeindrucken.",
-    "simple-crm": "Ein sehr einfaches Customer-Relationship-Management-System mit CRUD-Funktionalität. [IN PRODUKTION]",
+    "dabubble": "Ein benutzerfreundliches Slack-Klon-App, das eine einfache Teamkommunikation und Zusammenarbeit durch organisierte Chats und Kanäle ermöglicht.",
     "say-hi": "Sag Hi!",
     "contact-h6": "Möchtest du dein Projekt besprechen?",
     "contact-p": "Sag hallo! Lass uns deine Ideen besprechen und umsetzen.",
@@ -30,5 +30,6 @@
     "footer-html-2": "<a href=\"./impressum\" target=\"_blank\">Impressum</a><div></div>",
     "thanks": "Vielen Dank",
     "privacy-policy-link": "./datenschutzerklaerung",
-    "send-a-message": "Nachricht senden"
+    "send-a-message": "Nachricht senden",
+    "coming-soon": "BALD..."
 }
