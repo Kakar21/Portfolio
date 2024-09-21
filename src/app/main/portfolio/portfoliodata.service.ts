@@ -13,7 +13,7 @@ export class PortfoliodataService {
       path: 'dabubble',
       number: '01',
       tools: 'Angular | TypeScript | HTML | SCSS | Firebase',
-      link: '',
+      link: 'https://dabubble.kakar.dev/',
       github: 'https://github.com/Kakar21/DABubble'
     },
     {
