@@ -6,6 +6,16 @@
                 <br>
                 {{ "about-me-br" | translate }}
             </p>
+            <div class="work">
+                <div>
+                    <img src="../../../assets/img/symbols/house.svg" alt="House">
+                    <p>{{ "about-me-work-1" | translate }}</p>
+                </div>
+                <div>
+                    <img src="../../../assets/img/symbols/laptop_chromebook.svg" alt="Laptop">
+                    <p>{{ "about-me-work-2" | translate }}</p>
+                </div>
+            </div>
             <button (click)="scrollToSection('contact')" class="noselect">{{ "about-me-button" | translate }}</button>
         </div>
         <div [class.portraitAni]="portraitScrolled" class="portrait noselect">

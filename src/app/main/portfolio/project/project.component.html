@@ -15,12 +15,8 @@
                 <p>{{ project.path | translate }}</p>
             </div>
             <div class="noselect">
-                @if (index == 3) {
-
-                } @else {
-                    <a href="{{ project.link }}" target="_blank"><button>Live</button></a>
-                }
-                <a href="{{ project.github }}" target="_blank"><button href="">GitHub</button></a>
+                <a href="{{ project.link }}" target="_blank"><button>Live</button></a>
+                <a href="{{ project.github }}" target="_blank"><button>GitHub</button></a>
             </div>
         </div>
     </div>

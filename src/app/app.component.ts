@@ -28,8 +28,8 @@ export class AppComponent {
 
   
   constructor(public translate: TranslateService, private router: Router) {
-    translate.setDefaultLang('en');
-    translate.use(localStorage.getItem('lang') || 'en');
+    translate.setDefaultLang('de');
+    translate.use(localStorage.getItem('lang') || 'de');
 
     router.events.subscribe((event) => {
       if (router.url !== '/') {

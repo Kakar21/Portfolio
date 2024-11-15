@@ -15,7 +15,7 @@ export class HeaderComponent {
   @Input() menuOpen: boolean;
   @Input() legalLink: boolean;
 
-  lang = localStorage.getItem('lang') || 'en';
+  lang = localStorage.getItem('lang') || 'de';
 
   
   constructor(private translateService: TranslateService) {
