@@ -14,9 +14,17 @@
                 <span>{{ project.tools }}</span>
                 <p>{{ project.path | translate }}</p>
             </div>
-            <div class="noselect">
-                <a href="{{ project.link }}" target="_blank"><button>Live</button></a>
-                <a href="{{ project.github }}" target="_blank"><button>GitHub</button></a>
+            <div class="noselect" [class.fullstack]="project.githubBackend !== ''">
+                @if (project.githubBackend !== '') {
+                    <a href="{{ project.link }}" target="_blank"><button><img src="../../../../assets/img/symbols/play.svg" alt="Play"></button></a>
+                    <div>
+                        <a href="{{ project.githubFrontend }}" target="_blank"><button>Front<br>End</button></a>
+                        <a href="{{ project.githubBackend }}" target="_blank"><button>Back<br>End</button></a>
+                    </div>
+                } @else {
+                    <a href="{{ project.link }}" target="_blank"><button><img src="../../../../assets/img/symbols/play.svg" alt="Play"></button></a>
+                    <a href="{{ project.githubFrontend }}" target="_blank"><button><img style="filter: brightness(0);" src="../../../../assets/img/socials/github.svg" alt="GitHub"></button></a>
+                }
             </div>
         </div>
     </div>

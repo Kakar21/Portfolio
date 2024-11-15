@@ -16,7 +16,8 @@ export class ProjectComponent {
     number: '',
     tools: '',
     link: '',
-    github: ''
+    githubFrontend: '',
+    githubBackend: ''
   }; 
 
   @Input() index = 0;
