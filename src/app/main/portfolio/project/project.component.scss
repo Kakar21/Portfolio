@@ -309,6 +309,12 @@ main {
     }
 }
 
+@media (max-width: 1000px) {
+    .fullstack {
+        flex-direction: column-reverse;
+    }
+}
+
 @media (max-width: 875px) {
     main {
         width: 100%;
@@ -424,6 +430,8 @@ main {
     }
 
     .fullstack {
+        flex-direction: row;
+
         >div {
             >a {
                 >button {
@@ -482,15 +490,8 @@ main {
     }
 }
 
-// @media (min-width: 320px) and (max-width: 390px) {
-//     .thumbnail {
-//         >div {
-//             width: calc((19.75rem * 0.9) - 8px);
-//             height: calc((12.5rem * 0.9) - 8px );
-//         }
-//         >img {
-//             width: calc(19.75rem * 0.9);
-//             height: calc(12.5rem * 0.9);
-//         }
-//     }
-// }
+@media (max-width: 490px) {
+    .fullstack {
+        flex-direction: column-reverse;
+    }
+}

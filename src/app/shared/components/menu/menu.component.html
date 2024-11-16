@@ -5,7 +5,7 @@
             <div class="edge"></div>
         </div>
         <div [routerLink]="''" (click)="scrollToSection('my-skills')" class="section">
-            <h1 [ngClass]="{'my-skills-de': lang === 'de'}">{{ "my-skills" | translate }}</h1>
+            <h1 [ngClass]="{'my-skills-de': lang === 'de'}" [innerHTML]="'my-skills' | translate"></h1>
             <div class="edge"></div>
         </div>
         <div [routerLink]="''" (click)="scrollToSection('portfolio')" class="section">

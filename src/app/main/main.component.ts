@@ -6,6 +6,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ArrowComponent } from './arrow/arrow.component';
 import { NgStyle } from '@angular/common';
+import { ReferencesComponent } from './references/references.component';
 
 @Component({
   selector: 'app-main',
@@ -17,6 +18,7 @@ import { NgStyle } from '@angular/common';
     PortfolioComponent,
     ContactComponent,
     ArrowComponent,
+    ReferencesComponent,
     NgStyle
   ],
   templateUrl: './main.component.html',
@@ -32,7 +34,7 @@ export class MainComponent {
   }
 
   
-  titlesScrolled = [{ scrolled: false }, { scrolled: false }, { scrolled: false }, { scrolled: false }];
+  titlesScrolled = [{ scrolled: false }, { scrolled: false }, { scrolled: false }, { scrolled: false }, { scrolled: false }];
 
   arrowScrolled = [{ scrolled: false }, { scrolled: false }, { scrolled: false }];
 

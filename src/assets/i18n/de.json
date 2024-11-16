@@ -3,8 +3,8 @@
     "scroll": "Runter",
     "down": "scrollen",
     "about-me": "Über mich",
-    "about-me-p": "Ich bin Frontend-Entwickler aus Wolfenbüttel, Deutschland. Es bereitet mir Freude, Designern und Unternehmen dabei zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Entwicklerkarriere mit einer Stelle als Junior-Webentwickler fortzusetzen.",
-    "about-me-br": "Du suchst genau danach? Kontaktiere mich gerne!",
+    "about-me-p": "Ich bin Fullstack-Entwickler aus Braunschweig, Deutschland. Es begeistert mich, Design und Funktionalität zu vereinen und Unternehmen dabei zu unterstützen, ihre Ideen digital umzusetzen. Ich freue mich darauf, meine Karriere als Entwickler fortzusetzen und in einem kreativen Team innovative Lösungen zu gestalten.",
+    "about-me-br": "Suchst du genau das? Dann melde dich gerne!",
     "about-me-work-1": "Offen für Arbeit nahe Braunschweig",
     "about-me-work-2": "Offen für Remote-Arbeit",
     "about-me-button": "Lass uns reden",
@@ -34,5 +34,13 @@
     "thanks": "Vielen Dank",
     "privacy-policy-link": "./datenschutzerklaerung",
     "send-a-message": "Nachricht senden",
-    "coming-soon": "BALD..."
+    "coming-soon": "BALD...",
+    "references": "Referenzen",
+    "references-description": "Sowohl eigenständig als auch im Team blühe ich auf. Das sagen meine Kollegen über die Zusammenarbeit mit mir.",
+    "references-position-1": "Frontend-Entwickler",
+    "references-quote-1": "Mustafa hat DABubble im Prinzip zu 70% auf seinen Schultern getragen. Seine Zielstrebigkeit und sein Durchhaltevermögen sind bemerkenswert! Auch in der Kommunikation lief alles bestens zwischen mir und Mustafa!",
+    "references-position-2": "Projektpartner",
+    "references-quote-2": "Mit Mustafa zu arbeiten war immer eine Freude. Er hat die Drag-and-Drop-Funktion reibungslos integriert und dabei geholfen, Bugs schnell zu beheben. Seine Expertise in JavaScript und CSS hat unser Design auf ein neues Level gehoben. Mustafa ist ein echter Gewinn für jedes Projekt!",
+    "references-position-3": "Projektpartner",
+    "references-quote-3": "Es ist echt beeindruckend, wie jemand so konsequent und zielstrebig an Aufgaben herangeht, dabei immer diszipliniert bleibt und stets auf das Ergebnis fokussiert ist. Solche Eigenschaften sieht man nicht oft, besonders wenn es um Programmieren geht. Da merkt man wirklich, wie viel Mühe und Präzision in seiner Arbeit steckt."
 }

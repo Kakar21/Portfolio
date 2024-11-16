@@ -3,8 +3,8 @@
     "scroll": "Scroll",
     "down": "Down",
     "about-me": "About me",
-    "about-me-p": "I am a Front-end developer based in Wolfenbüttel, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position.",
-    "about-me-br": "If you think I’d be a good match for your projects, contact me!",
+    "about-me-p": "I’m a fullstack developer based in Brunswick, Germany. I’m passionate about blending design and functionality, helping companies bring their ideas to life digitally. I’m excited to advance my career as a developer and create innovative solutions within a creative team.",
+    "about-me-br": "Looking for someone like that? Feel free to reach out!",
     "about-me-work-1": "Open to work near Brunswick",
     "about-me-work-2": "Open to work remote",
     "about-me-button": "Let’s talk",
@@ -34,5 +34,13 @@
     "thanks": "Thank you",
     "privacy-policy-link": "./privacy-policy",
     "send-a-message": "Send a message",
-    "coming-soon": "SOON..."
+    "coming-soon": "SOON...",
+    "references": "References",
+    "references-description": "I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.",
+    "references-position-1": "Frontend Engineer",
+    "references-quote-1": "Mustafa carried DABubble on his shoulders for about 70%. His determination and perseverance are remarkable! Communication between Mustafa and me was also excellent!",
+    "references-position-2": "Team Partner",
+    "references-quote-2": "Working with Mustafa was always a pleasure. He seamlessly integrated the drag-and-drop feature and helped quickly resolve bugs. His expertise in JavaScript and CSS took our design to a new level. Mustafa is a true asset to any project!",
+    "references-position-3": "Team Partner",
+    "references-quote-3": "It's truly impressive how consistently and determinedly he approaches tasks, always staying disciplined and focused on the results. You don’t often see these qualities, especially in programming. You can really tell how much effort and precision he puts into his work."
 }

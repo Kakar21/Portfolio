@@ -1,0 +1,9 @@
+<main>
+    <h2>{{ 'references' | translate }}</h2>
+    <p>{{ 'references-description' | translate }}</p>
+    <div>
+        @for (reference of referencedata.referencesList; track $index) {
+            <app-reference [reference]="reference"></app-reference>
+        }
+    </div>
+</main>

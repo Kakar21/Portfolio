@@ -33,6 +33,34 @@ export class MySkillsComponent {
       name: 'CSS'
     },
     {
+      path: 'material-design',
+      name: 'Material Design'
+    },
+    {
+      path: 'django',
+      name: 'Django'
+    },
+    {
+      path: 'python',
+      name: 'Python'
+    },
+    {
+      path: 'api',
+      name: 'Rest-Api'
+    },
+    {
+      path: 'sql',
+      name: 'SQL'
+    },
+    {
+      path: 'postgresql',
+      name: 'PostgreSQL'
+    },
+    {
+      path: 'redis',
+      name: 'Redis'
+    },
+    {
       path: 'firebase',
       name: 'Firebase'
     },
@@ -41,16 +69,28 @@ export class MySkillsComponent {
       name: 'Git'
     },
     {
+      path: 'docker',
+      name: 'Docker'
+    },
+    {
+      path: 'linux',
+      name: 'Linux'
+    },
+    {
+      path: 'postman',
+      name: 'Postman'
+    },
+    {
+      path: 'heroku',
+      name: 'Heroku'
+    },
+    {
+      path: 'google-cloud',
+      name: 'Google Cloud'
+    },
+    {
       path: 'scrum',
       name: 'Scrum'
-    },
-    {
-      path: 'api',
-      name: 'Rest-Api'
-    },
-    {
-      path: 'material-design',
-      name: 'Material Design'
     },
   ];
 
